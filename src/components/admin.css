@@ -1,0 +1,199 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Varela Round", sans-serif;
+    background-color: #044941;
+    /* background-color: #fabc14; */
+}
+
+.adminwrapper{
+    /* border: 1px solid #fabc14; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+   margin: 40px 100px ;
+   padding: 20px 10px;
+   box-shadow: inset 0px 5px 10px #fabc14;
+   backdrop-filter: blur(50px);
+   /* align-items: center; */
+   /* justify-content: center; */
+
+}
+.adminhead{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+.admincon{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.admincon>label{
+    font-size: 20px;
+    color: #fabc14;
+    margin: 15px;
+
+}
+.admincon1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.admincon>textarea{
+    width: 700px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.admincon>input{
+    width: 700px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.admincon>button{
+    padding: 9px 20px;
+    border: none;
+    width: 150px;
+    /* height: 40px; */
+    border-radius: 20px;
+    font-size: 19px;
+    margin: 15px;
+    background-color: #044941;
+    color: #fabc14;
+    border: 1px solid #fabc14;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(20px);
+    /* box-shadow: inset 2px 2px 2px #fabc14; */
+
+    &:hover{
+        box-shadow:  inset 0px 2px 12px #fabc14;
+    }
+}
+
+
+.latestblogs{
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid white;
+    margin-top: 20px;
+    /* outline: 1px solid white; */
+
+}
+.latesthead{
+    color: white;
+    font-size: 19px;
+    margin-left: 40px;
+    /* text-align: center; */
+}
+.latestcon{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.latestcon>div{
+    border: 1px solid #fabc14;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 20px;
+
+}
+
+.latestcon>div>h3{
+    color: #fabc14;
+}
+.latestcon>div>a{
+    text-decoration: none;
+    color: #fabc14;
+}
+.latestcon>div>button{
+    border: none;
+    border-radius: 15px ;
+    padding: 10px 15px;
+    background-color: crimson;
+    margin-top: 20px ;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* single blog */
+
+.singleblog{
+    background-color: white;
+    border: 1px solid white;
+    margin: 40px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 20px;
+    padding: 20px ;
+    min-height: 300px;
+}
+.singleblog>h1{
+    color: #044941;
+    font-size: 31px;
+    font-weight: 600;
+}
+.singleblog>p{
+    font-size: 18px;
+}
+.comments{
+    border: 1px solid #044941;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    margin-top: 200px;
+   
+
+}
+.comments>label{
+    font-size: 20px;
+    margin:  15px 0px;
+}
+.comments>input{
+    width: 400px;
+    padding: 15px;
+    font-size: 18px;
+    outline: none;
+    /* border: none; */
+    border-radius: 10px;
+}
+.comments>button{
+    /* width: 300px; */
+    border: none;
+    border-radius: 15px ;
+    padding: 10px 15px;
+    background-color: #fabc14;
+    margin-top: 20px ;
+    color: #044941;
+    font-size: 18px;
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+}
