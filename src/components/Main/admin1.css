@@ -1,0 +1,126 @@
+.adminwrapper{
+    background-color: #044941;
+    border: 10px solid white;
+    /* border-radius: 10px; */
+    overflow-x: scroll;
+   
+}
+#blog{
+    height: 60vh;
+}
+
+
+
+.latestblogs{
+    /* border-radius: 10px; */
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid white;
+    /* margin-top: 20px; */
+    /* outline: 1px solid white; */
+
+}
+.latesthead{
+    color: white;
+    font-size: 25px;
+    margin-left: 40px;
+    /* text-align: center; */
+}
+.latestcon{
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.latestcon>div{
+    border: 1px solid #fabc14;
+    padding: 15px 40px;
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 20px; */
+    margin: 20px;
+
+}
+
+.latestcon>div>h3{
+    color: #fabc14;
+}
+.latestcon>div>p{
+color: white;
+font-size: 19px;
+}
+.latestcon>div>a{
+    text-decoration: none;
+    color: #fabc14;
+    font-size: 19px;
+}
+.latestcon>div>button{
+    border: none;
+    border-radius: 15px ;
+    padding: 10px 15px;
+    background-color: crimson;
+    margin-top: 20px ;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* single blog */
+
+.singleblog{
+    background-color: #044941;
+    border: 1px solid white;
+    margin: 40px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 10px;
+    padding: 20px ;
+    min-height: 300px;
+}
+.singleblog>h1{
+    color: #fabc14;
+    font-size: 31px;
+    font-weight: 600;
+}
+.singleblog>p{
+    font-size: 18px;
+    color: white;
+}
+.comments{
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    margin-top: 250px;
+   
+
+}
+.comments>label{
+    font-size: 20px;
+    margin:  15px 0px;
+}
+.comments>input{
+    width: 400px;
+    padding: 15px;
+    font-size: 18px;
+    outline: none;
+    /* border: none; */
+    border-radius: 10px;
+}
+.comments>button{
+    /* width: 300px; */
+    border: none;
+    border-radius: 15px ;
+    padding: 10px 15px;
+    background-color: #fabc14;
+    margin-top: 20px ;
+    color: #044941;
+    font-size: 18px;
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+}

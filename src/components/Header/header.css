@@ -1,0 +1,81 @@
+html {
+	scroll-snap-type: y mandatory;
+	scroll-behavior: smooth;
+}
+
+
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: "Varela Round", sans-serif;
+    background-color: #044941;
+    /* background-color: #fabc14; */
+}
+.header{
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(10px);
+}
+.headwrapper{
+    /* position: sticky; */
+    /* top: 0px; */
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-between;
+    padding: 35px 50px ;
+    color: white;
+    align-items: center;
+    z-index: 999;
+    /* background-color: #044941; */
+}
+.headlinks{
+    display: flex;
+    font-size: 20px;
+    gap: 60px;
+    align-items: center;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    /* background-color: #044941; */
+   
+}
+.hlink{
+    cursor: pointer;
+}
+.hlink{
+    font-weight: 600;
+    /* color: #fabc14; */
+    color: white;
+    padding: 10px 15px;
+    transition: all 0.2s ease-in;
+    border-radius: 15px;
+   
+    /* backdrop-filter: blur(15px); */
+    &:hover{
+        box-shadow: 0px 2px 0px white;
+        /* animation: boxs 1s infinite; */
+    }
+   
+}
+.hlink>a{
+    text-decoration: none;
+    color: inherit;
+}
+.hlink:nth-child(3){
+background-color: #044941;
+font-weight: 600;
+padding: 10px 20px;
+border-radius: 20px;
+
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fabc14;
+}
+.logo>a{
+    text-decoration: none;
+    color: inherit;
+}

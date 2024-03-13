@@ -1,0 +1,125 @@
+.bgmain{
+    top: -70px;
+    right: -360px;
+    position: fixed;
+    width: 900px;
+    height: 800px;
+    transform: rotate(140deg);
+    background-color: #fabc14;
+    border-radius: 60px;
+    z-index: -1;
+}
+.mainwrapper{
+    position: sticky;
+    top: 115px;
+    z-index: -1;
+
+    display: flex;
+   
+    align-items: center;
+    padding: 20px 40px;
+}
+.leftmain{
+    /* border: 1px solid white; */
+    padding: 10px 35px;
+    flex: 0.7;
+}
+
+.mcontent{
+    color: white;
+    font-size: 55px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    /* text-align: center; */
+}
+.leftmain>i{
+    position: absolute;
+    color: white;
+    scale: 4;
+    left: 50px;
+    bottom: 100px;
+    opacity: 0.1;
+
+}
+.rightmain{
+    /* border: 1px solid white; */
+    flex: 0.3;
+}
+
+.mimg{
+    display: flex;
+ 
+    align-items: center;
+    
+}
+.mimg>img{
+    
+width: 560px;
+border-radius: 80px;
+
+}
+
+
+/* main2 */
+
+.main2wrapper{
+    margin-top: 30px;
+  
+    padding: 80px 40px;
+    background-color: #044941;
+    display: flex;
+    /* border: 1px solid white; */
+    gap: 20px;
+    color: white;
+    z-index: 2;
+}
+.main2card{
+    flex: 0.8;
+    font-size: 18px;
+    /* border: 1px solid white; */
+    border-radius: 15px;
+    padding: 35px 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    box-shadow: inset 0px 0px 8px #fabc14;
+}
+.main2card>i{
+    color: #fabc14;
+    scale: 1.3;
+}
+
+/* main3 */
+.main3wrapper{
+    /* border: 1px solid white; */
+    padding: 80px 40px  ;
+    background-color: #044941;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main3left>img{
+    width: 430px;
+    border-radius: 20px;
+}
+.main3left{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex: 0.8;
+    /* border: 1px solid white; */
+}
+.main3right{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    color: white;
+    /* border: 1px solid white; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
