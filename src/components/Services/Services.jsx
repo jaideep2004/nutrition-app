@@ -1,5 +1,7 @@
 import React from "react";
 import "./services.css";
+import '../Header/responsive.css'
+
 const Services = () => {
 	return (
 		<div className='servicewrapper'>

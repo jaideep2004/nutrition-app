@@ -40,11 +40,11 @@ body{
     /* background-color: #044941; */
    
 }
+
 .hlink{
     cursor: pointer;
-}
-.hlink{
     font-weight: 600;
+    
     /* color: #fabc14; */
     color: white;
     padding: 10px 15px;
@@ -59,6 +59,7 @@ body{
    
 }
 .hlink>a{
+    text-shadow: 0px 2px 2px black;
     text-decoration: none;
     color: inherit;
 }
@@ -74,6 +75,7 @@ border-radius: 20px;
     font-weight: 700;
     cursor: pointer;
     color: #fabc14;
+    text-shadow: 0px 2px 2px black;
 }
 .logo>a{
     text-decoration: none;

@@ -20,9 +20,20 @@ const Main2 = () => {
 
   const [scrollOpacity, setScrollOpacity] = useState(1);
 
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const newOpacity = 1 - window.scrollY / 800; // You can adjust the division factor as needed
+  //     setScrollOpacity(newOpacity < 0 ? 0 : newOpacity);
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll);
+
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
   useEffect(() => {
     const handleScroll = () => {
-      const newOpacity = 1 - window.scrollY / 800; // You can adjust the division factor as needed
+      const scrollThreshold = window.innerWidth < 768 ? 2000 : 900; // Adjust the threshold for mobile screens
+      const newOpacity = 1 - window.scrollY / scrollThreshold;
       setScrollOpacity(newOpacity < 0 ? 0 : newOpacity);
     };
 

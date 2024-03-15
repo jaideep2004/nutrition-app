@@ -1,4 +1,6 @@
 .adminwrapper{
+    display: flex;
+    flex-direction: column;
     background-color: #044941;
     border: 10px solid white;
     /* border-radius: 10px; */
@@ -12,13 +14,10 @@
 
 
 .latestblogs{
-    /* border-radius: 10px; */
-    /* border: 1px solid black; */
+    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
     border-top: 1px solid white;
-    /* margin-top: 20px; */
-    /* outline: 1px solid white; */
 
 }
 .latesthead{

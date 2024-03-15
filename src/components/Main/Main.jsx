@@ -6,7 +6,7 @@ import Main4 from "./Main4";
 import LatestBlogs from "./LatestBlogs";
 import Services from "../Services/Services";
 import About from "../About/About";
-
+import '../Header/responsive.css'
 
 const Main = () => {
 	
