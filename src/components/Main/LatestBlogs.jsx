@@ -5,10 +5,16 @@ import "./admin1.css";
 import { ToastContainer, toast } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const LatestBlogs = () => {
-	const [title, setTitle] = useState("");
-	const [content, setContent] = useState("");
+
+	useEffect(() => {
+		AOS.init();
+	}, []);
+	
+	
 	const [blogPosts, setBlogPosts] = useState([]);
 
 	useEffect(() => {
@@ -37,7 +43,7 @@ const LatestBlogs = () => {
 			<div className='latestblogs'>
 				<div className='latesthead'>
 					{" "}
-					<h2>Latest Blogs</h2>
+					<h2 data-aos="fade-right" data-aos-duration="500">Latest Blogs</h2>
 				</div>
 				<div className='latestcon'>
 					

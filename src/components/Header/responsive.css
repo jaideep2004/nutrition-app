@@ -5,7 +5,7 @@
 
 	#mmenu {
 		position: absolute;
-		color: #f0dd4d;
+		color: #fabc14;
 		display: flex;
 		flex-direction: column;
 		cursor: pointer;
@@ -41,7 +41,7 @@
 		top: 130px;
 		left: 10px;
 		display: flex;
-		background-color: #f0dd4d;
+		background-color: #fabc14;
 		justify-content: center;
 		flex-direction: column;
 		transition: all 0.5s ease;
@@ -104,9 +104,9 @@
 
 	.mimg > img {
 		z-index: -1;
-		scale: 0.59 0.7;
+		scale: 0.64 0.7;
 		aspect-ratio: 3/2;
-		margin-top: -60px;
+		margin-top: -45px;
 		/* margin-left: -110px; */
 		/* margin-right: -230px; */
 	}

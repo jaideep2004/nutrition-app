@@ -8,8 +8,15 @@ import Services from "../Services/Services";
 import About from "../About/About";
 import '../Header/responsive.css'
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 const Main = () => {
 	
+	useEffect(() => {
+		AOS.init();
+	}, []);
 
 	return (
 		<div>
@@ -17,14 +24,16 @@ const Main = () => {
 			{/* main */}
 			<div className='mainwrapper'>
 				<div className='leftmain'>
-					<div className='mcontent'>
+					<div className='mcontent' data-aos="fade-right"
+     data-aos-duration="1000">
 						Unlock Your Potential with Good Nutrition
 					</div>
 					<i class='fa-solid fa-seedling fa-2xl'></i>
 				</div>
 				
 				<div className='rightmain'>
-					<div className='mimg'>
+					<div className='mimg' data-aos="fade-down"
+     data-aos-duration="500">
 						<img src='./images/p1.webp' alt='' />
 					</div>
 				</div>
