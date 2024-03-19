@@ -1,15 +1,71 @@
 .footerwrap{
+    
     display: flex;
+    flex-direction: column;
     border: 2px solid #fabc14;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: center; */
     background-color: #044941;
-    padding:  50px 30px;
+    padding:   30px;
+    gap: 20px;
 }
+.footup{
+    /* border: 1px solid white; */
+}
+.footup>h2{
+    display: flex;
+    /* border: 1px solid white; */
+font-size: 28px;
+font-weight: 600;
+color: #fabc14;
+
+
+}
+.footdown{
+    display: flex;
+gap: 250px;
+ /* border: 1px solid white; */
+ align-items: center;
+ justify-content: space-between;
+}
+
+.footleft1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid white; */
+    
+    
+}
+.footleft1>table>tr>td:nth-child(1){
+    padding: 2px 10px ;
+}
+.footleft1>table>tr>td:nth-child(1){
+    font-size: 19px;
+    color: white;
+    font-weight: 600;
+}
+.footleft1>table>tr>td:nth-child(2){
+    font-size: 19px;
+    color: #fabc14;
+    
+    /* font-weight: 600; */
+}
+.footright1{
+    display: flex;
+    gap: 30px;
+}
+.footright1>a>i{
+    color: #fabc14;
+    scale: 1.1;
+}
+
+
 
 .footleft{
 /* border: 1px solid white; */
-font-size: 25px;
+font-size: 28px;
 font-weight: 600;
 color: #fabc14;
 flex: 1;

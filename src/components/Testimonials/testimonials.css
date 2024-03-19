@@ -1,0 +1,30 @@
+
+.testwrap{
+   text-align: center;
+  
+   background-color: #fabc14;
+   /* background-color: #044941; */
+   padding: 20px 40px 40px 40px ;
+}
+
+.testwrap>h1{
+    color: #044941;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 35px;
+    /* border: 1px solid white; */
+}
+
+.videocontain>video{
+border-radius: 20px;
+
+}
+.videocontain>p{
+    font-size: 18px;
+    color: #044941;
+}
+
+.slider1>div{
+    display: flex;
+    flex-direction: column;
+}

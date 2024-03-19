@@ -17,6 +17,8 @@ body{
     position: sticky;
     top: 0px;
     backdrop-filter: blur(10px);
+    /* background-color: #044941; */
+    z-index: 9999;
 }
 .headwrapper{
     /* position: sticky; */
@@ -24,10 +26,10 @@ body{
     display: flex;
     /* background-color: red; */
     justify-content: space-between;
-    padding: 35px 50px ;
+    padding: 30px 50px ;
     color: white;
     align-items: center;
-    z-index: 999;
+    /* z-index: 9999; */
     /* background-color: #044941; */
 }
 .headlinks{
@@ -38,6 +40,7 @@ body{
     /* border: 1px solid white; */
     border-radius: 10px;
     /* background-color: #044941; */
+    /* z-index: 9999; */
    
 }
 

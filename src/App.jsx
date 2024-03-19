@@ -9,10 +9,10 @@ import Footer from "./components/Footer/Footer";
 function App() {
 	return (
 		<>
-			{/* <Header /> */}
+			
 
 			<BrowserRouter>
-				{/* <Main /> */}
+			
         <Header />
 				<Routes>
 					<Route path='/' element={<Main />} />

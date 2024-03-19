@@ -75,7 +75,7 @@ border-radius: 80px;
     /* border: 1px solid white; */
     gap: 20px;
     color: white;
-    z-index: 2;
+    z-index: -1;
 }
 .main2card{
     flex: 0.8;
@@ -89,6 +89,7 @@ border-radius: 80px;
     justify-content: center;
     gap: 30px;
     box-shadow: inset 0px 0px 8px #fabc14;
+    z-index: 1;
 }
 .main2card>i{
     color: #fabc14;
@@ -104,6 +105,7 @@ border-radius: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1;
 }
 .main3left>img{
     width: 430px;

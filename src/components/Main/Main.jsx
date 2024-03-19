@@ -10,9 +10,17 @@ import '../Header/responsive.css'
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Testimonials from "../Testimonials/Testimonials";
 
 
 const Main = () => {
+
+	const videos = [
+		{ src: './images/v1.mp4',label:'Relief from High Blood Pressure and Sugar' },
+		{ src: './images/v2.mp4',label:'Relief from High Blood Pressure ' },
+		{ src: './images/v3.mp4',label:'Relief from Thyroid and Bloating ' },
+		{ src: './images/v4.mp4', label:'Relief from Lack of Energy and Obesity'},
+	  ];
 	
 	useEffect(() => {
 		AOS.init();
@@ -43,6 +51,7 @@ const Main = () => {
 			<Services />
 			<About/>
 			{/* <Main4 /> */}
+			<Testimonials videos={videos}/>
 			<LatestBlogs/>
 		</div>
 	);

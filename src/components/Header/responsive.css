@@ -157,25 +157,35 @@
 	padding-bottom: 60px;
 }
 
+
+/* testimonials */
+.testwrap{
+	margin-top: 200px;
+	
+}
+
+
+
 /* blogs */
 .adminwrapper{
-	margin-top: 220px;
+	/* margin-top: 220px; */
 }
 
 /* footer */
 .footerwrap{
+	
 	flex-direction: column;
 }
-.footcenter{
-	margin-top: 30px;
+.footup{
+	text-align: center;
 }
-
-.footright{
-	margin-top: 30px;
+.footdown{
+	flex-direction: column;
+	
 }
-
-
-
+.footright1{
+	margin-top: -180px;
+}
 
 
 
