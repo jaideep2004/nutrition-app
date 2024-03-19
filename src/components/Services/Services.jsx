@@ -14,27 +14,43 @@ const Services = () => {
 	return (
 		<div className='servicewrapper'>
 			<div className='service1'>
-				<div className='serviceleft'>
+				<div className='serviceleft' data-aos="fade-left">
 					<h1 data-aos="fade-down">Our Services</h1>
 					<div className='service' data-aos="fade-left" data-aos-duration="500">
-						<i class='fa-solid fa-utensils fa-xl'></i>
-						Tailored meal plans based on your dietary preferences, lifestyle,
-						and health objectives
+						<i class='fa-solid fa-heartbeat fa-xl'></i>
+						Expert guidance for managing Type 2 diabetes.
 					</div>
 					<div className='service' data-aos="fade-left" data-aos-duration="550">
-						<i class='fa-solid fa-weight-scale fa-xl'></i>
-						Customized weight loss or gain strategies that prioritize
-						sustainable, long-term results.
+						<i class='fa-solid fa-ribbon fa-xl'></i>
+						Comprehensive support for cancer-related nutrition.
 					</div>
 					<div className='service' data-aos="fade-left" data-aos-duration="600">
-						<i class='fa-solid fa-phone fa-xl'></i>
-						One-on-one consultations to discuss your health history, current
-						habits, and goals.
+						<i class='fa-solid fa-bone fa-xl'></i>
+						Tailored nutritional plans for addressing gout.
 					</div>
 					<div className='service' data-aos="fade-left" data-aos-duration="650">
 						<i class='fa-solid fa-heart fa-xl'></i>
-						Personalized approaches for conditions such as diabetes, heart
-						health, and more.
+						Holistic approach to managing fatty liver through diet.
+					</div>
+					<div className='service' data-aos="fade-left" data-aos-duration="700">
+						<i class='fa-solid fa-stethoscope fa-xl'></i>
+						Specialized dietary recommendations for hypertension management.
+					</div>
+					<div className='service' data-aos="fade-left" data-aos-duration="750">
+						<i class='fa-solid fa-weight fa-xl'></i>
+						Personalized strategies for tackling obesity through nutrition.
+					</div>
+					<div className='service' data-aos="fade-left" data-aos-duration="800">
+						<i class='fa-solid fa-venus-mars fa-xl'></i>
+						Guidance and support for managing PCOD (Polycystic Ovarian Disease) with diet.
+					</div>
+					<div className='service' data-aos="fade-left" data-aos-duration="850">
+						<i class='fa-solid fa-pills fa-xl'></i>
+						Nutrition counseling for addressing erectile dysfunction.
+					</div>
+					<div className='service' data-aos="fade-left" data-aos-duration="900">
+						<i class='fa-solid fa-heart fa-xl'></i>
+						Dietary solutions for managing acidity and bloating effectively.
 					</div>
 				</div>
 				<div className='serviceright'>

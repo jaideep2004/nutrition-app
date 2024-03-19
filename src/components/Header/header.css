@@ -34,7 +34,7 @@ body{
 }
 .headlinks{
     display: flex;
-    font-size: 20px;
+    font-size: 18px;
     gap: 60px;
     align-items: center;
     /* border: 1px solid white; */
@@ -45,12 +45,14 @@ body{
 }
 
 .hlink{
+    position: relative;
+/* border: 1px solid white; */
     cursor: pointer;
     font-weight: 600;
     
     /* color: #fabc14; */
     color: white;
-    padding: 10px 15px;
+    padding-bottom: 5px ;
     transition: all 0.2s ease-in;
     border-radius: 15px;
    
@@ -62,11 +64,18 @@ body{
    
 }
 .hlink>a{
+    padding: 10px 15px;
+/* border: 1px solid white; */
     text-shadow: 0px 2px 2px black;
     text-decoration: none;
     color: inherit;
+
+
+   
 }
-.hlink:nth-child(3){
+
+
+.hlink:nth-child(4){
 background-color: #044941;
 font-weight: 600;
 padding: 10px 20px;
@@ -74,7 +83,7 @@ border-radius: 20px;
 
 }
 .logo{
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 700;
     cursor: pointer;
     color: #fabc14;
@@ -84,3 +93,42 @@ border-radius: 20px;
     text-decoration: none;
     color: inherit;
 }
+
+.dropdown{
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    background-color: #fabc14;
+    position: absolute;
+top: 37px;
+color: hsl(173, 90%, 15%);
+padding: 15px 20px;
+gap: 20px;
+border-radius: 20px;
+border: 1px solid #044941;
+}
+/* .sub-dropdown{
+    background-color: #fabc14;
+    position: absolute; 
+    left: 200px;
+} */
+
+.sub-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    transition: all 0.3s ease;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+    color: #044941;
+    position: absolute;
+    top: 50px; /* Adjust according to your design */
+    left: 170px; /* Adjust according to your design */
+    gap: 20px;
+    border: 1px solid #fabc14;
+  }
+  

@@ -7,12 +7,12 @@
 
 .aboutwrapper {
 	background-color: #044941;
-	
+	padding: 40px 0px;
 	display: flex;
     /* border: 1px solid black; */
-    align-items: center;
+    align-items:flex-end;
     justify-content: center;
-    gap: 30px;
+    /* gap: 20px; */
     
 
 }
@@ -28,6 +28,9 @@
 }
 .aboutleft>img{
     width: 340px;
+    height: 500px;
+    /* object-fit:cover; */
+    /* aspect-ratio: 3/2; */
     box-shadow: 0px 2px 8px #fabc14;
     border-radius: 10px;
     /* position: relative; */
@@ -69,4 +72,8 @@
     /* padding: 10px; */
     text-align: center;
     font-size: 18px;
+    letter-spacing: 1px;
+}
+.aboutcon>p>span{
+    color: #fabc14;
 }

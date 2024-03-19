@@ -1,117 +1,319 @@
-import React from "react";
+
+
+// import React, { useState } from "react";
+// import "./header.css";
+// import { Link } from "react-router-dom";
+
+// const Header = () => {
+//   const [selectedOption, setSelectedOption] = useState(null);
+//   const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+//   const [isSubDropdownVisible, setIsSubDropdownVisible] = useState(false);
+
+//   const handleDropdownHover = () => {
+//     setIsDropdownVisible(true);
+//     setIsSubDropdownVisible(false); // Hide subdropdown initially when main dropdown is hovered
+//   };
+
+//   const handleDropdownLeave = () => {
+//     setIsDropdownVisible(false);
+//     setIsSubDropdownVisible(false);
+//   };
+
+//   const handleOptionHover = (option) => {
+//     setSelectedOption(option); // Set the selected option when hovered
+//     setIsSubDropdownVisible(true); // Show subdropdown when an option is hovered
+//   };
+
+//   const handleOptionLeave = () => {
+//     setSelectedOption(null); // Clear selected option when leaving the option
+//     setIsSubDropdownVisible(false); // Hide subdropdown when leaving the option
+//   };
+
+//   return (
+//     <div className="header">
+//       <header>
+//         <div className="headwrapper">
+//           <div className="logo">
+//             <Link to="/">
+//               <div>DR. ARVIND SABHARWAL</div>
+//             </Link>
+//           </div>
+
+//           <div className="headlinks">
+//             <div
+//               className="hlink"
+//               onMouseEnter={handleDropdownHover}
+//               onMouseLeave={handleDropdownLeave}
+//             >
+//               <a href="#">TYPES OF DIET </a>
+//               {isDropdownVisible && (
+//                 <div className="dropdown">
+//                   <div
+//                     className="option"
+//                     onMouseEnter={() => handleOptionHover("LCHF Diet")}
+//                     onMouseLeave={handleOptionLeave}
+//                   >
+//                     LCHF Diet
+//                   </div>
+//                   <div
+//                     className="option"
+//                     onMouseEnter={() => handleOptionHover("Veganism")}
+//                     onMouseLeave={handleOptionLeave}
+//                   >
+//                     Veganism
+//                   </div>
+//                   <div
+//                     className="option"
+//                     onMouseEnter={() => handleOptionHover("Paleo Diet")}
+//                     onMouseLeave={handleOptionLeave}
+//                   >
+//                     Paleo Diet
+//                   </div>
+//                   <div
+//                     className="option"
+//                     onMouseEnter={() => handleOptionHover("Atkin Diet")}
+//                     onMouseLeave={handleOptionLeave}
+//                   >
+//                     Atkin Diet
+//                   </div>
+//                   <div
+//                     className="option"
+//                     onMouseEnter={() => handleOptionHover("Keto Diet")}
+//                     onMouseLeave={handleOptionLeave}
+//                   >
+//                     Keto Diet
+//                   </div>
+//                   <div
+//                     className="option"
+//                     onMouseEnter={() =>
+//                       handleOptionHover("Intermittent Fasting")
+//                     }
+//                     onMouseLeave={handleOptionLeave}
+//                   >
+//                     Intermittent Fasting
+//                   </div>
+//                   <div
+//                     className="option"
+//                     onMouseEnter={() => handleOptionHover("Dukan Diet")}
+//                     onMouseLeave={handleOptionLeave}
+//                   >
+//                     Dukan Diet
+//                   </div>
+//                   <div
+//                     className="option"
+//                     onMouseEnter={() => handleOptionHover("DASH Diet")}
+//                     onMouseLeave={handleOptionLeave}
+//                   >
+//                     DASH Diet
+//                   </div>
+//                   <div
+//                     className="option"
+//                     onMouseEnter={() => handleOptionHover("Day Diet")}
+//                     onMouseLeave={handleOptionLeave}
+//                   >
+//                     Day Diet
+//                   </div>
+//                   <div
+//                     className="option"
+//                     onMouseEnter={() =>
+//                       handleOptionHover("Mediterranean Diet")
+//                     }
+//                     onMouseLeave={handleOptionLeave}
+//                   >
+//                     Mediterranean Diet
+//                   </div>
+//                 </div>
+//               )}
+//               {isSubDropdownVisible && (
+//                 <div className="sub-dropdown">
+//                   {/* Render subdropdown based on the selected option */}
+//                   {selectedOption && (
+//                     <>
+//                       <div>Sub Option 1 for {selectedOption}</div>
+//                       <div>Sub Option 2 for {selectedOption}</div>
+//                     </>
+//                   )}
+//                 </div>
+//               )}
+//             </div>
+
+//             <div className="hlink">
+//               <a href="#about">ABOUT ME</a>
+//             </div>
+//             <div className="hlink">
+//               <a href="#blog">BLOG</a>
+//             </div>
+//             <div className="hlink">
+//               <a href="https://api.whatsapp.com/send?phone=9814323293">
+//                 CALL NOW
+//               </a>
+//             </div>
+//           </div>
+//         </div>
+//       </header>
+//     </div>
+//   );
+// };
+
+// export default Header;
+
+import React, { useState, useRef } from "react";
 import "./header.css";
-import { Link ,NavLink} from "react-router-dom";
-import { useState ,useEffect} from "react";
-import './responsive.css'
-import AOS from "aos";
-import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [selectedOption, setSelectedOption] = useState(null);
+  const [isDropdownVisible, setIsDropdownVisible] = useState(false);
+  const [isSubDropdownVisible, setIsSubDropdownVisible] = useState(false);
+  const dropdownTimerRef = useRef(null);
 
-	useEffect(() => {
-		AOS.init();
-	}, []);
+  const handleDropdownHover = () => {
+    setIsDropdownVisible(true);
+    setIsSubDropdownVisible(false); // Hide subdropdown initially when main dropdown is hovered
+    clearTimeout(dropdownTimerRef.current);
+  };
 
-	const [isVisible, setIsVisible] = useState(false);
+  const handleDropdownLeave = () => {
+    dropdownTimerRef.current = setTimeout(() => {
+      setIsDropdownVisible(false);
+      setIsSubDropdownVisible(false);
+    }, 500); // Set a delay before hiding the dropdown
+  };
 
-	const toggleVisibility = () => {
-		setIsVisible(!isVisible);
-	};
+  const handleOptionHover = (option) => {
+    setSelectedOption(option); // Set the selected option when hovered
+    setIsSubDropdownVisible(true); // Show subdropdown when an option is hovered
+  };
 
-	const [isIconVisible, setIsIconVisible] = useState(false);
+  const handleOptionLeave = () => {
+    setSelectedOption(null); // Clear selected option when leaving the option
+    setIsSubDropdownVisible(false); // Hide subdropdown when leaving the option
+  };
 
-	const toggleIcon = () => {
-		setIsIconVisible(!isIconVisible);
-	};
+  return (
+    <div className="header">
+      <header>
+        <div className="headwrapper">
+          <div className="logo">
+            <Link to="/">
+              <div>DR. ARVIND SABHARWAL</div>
+            </Link>
+          </div>
 
-	const handleButtonClick = () => {
-		toggleVisibility();
-		toggleIcon();
-		// Add any other functions you want to call here
-	};
+          <div className="headlinks">
+            <div
+              className="hlink"
+              onMouseEnter={handleDropdownHover}
+              onMouseLeave={handleDropdownLeave}
+            >
+              <a href="#">TYPES OF DIET </a>
+              {isDropdownVisible && (
+                <div className="dropdown">
+                  <div
+                    className="option"
+                    onMouseEnter={() => handleOptionHover("LCHF Diet")}
+                    onMouseLeave={handleOptionLeave}
+                  >
+                    LCHF Diet
+                  </div>
+                  <div
+                    className="option"
+                    onMouseEnter={() => handleOptionHover("Veganism")}
+                    onMouseLeave={handleOptionLeave}
+                  >
+                    Veganism
+                  </div>
+                  <div
+                    className="option"
+                    onMouseEnter={() => handleOptionHover("Paleo Diet")}
+                    onMouseLeave={handleOptionLeave}
+                  >
+                    Paleo Diet
+                  </div>
+                  <div
+                    className="option"
+                    onMouseEnter={() => handleOptionHover("Atkin Diet")}
+                    onMouseLeave={handleOptionLeave}
+                  >
+                    Atkin Diet
+                  </div>
+                  <div
+                    className="option"
+                    onMouseEnter={() => handleOptionHover("Keto Diet")}
+                    onMouseLeave={handleOptionLeave}
+                  >
+                    Keto Diet
+                  </div>
+                  <div
+                    className="option"
+                    onMouseEnter={() =>
+                      handleOptionHover("Intermittent Fasting")
+                    }
+                    onMouseLeave={handleOptionLeave}
+                  >
+                    Intermittent Fasting
+                  </div>
+                  <div
+                    className="option"
+                    onMouseEnter={() => handleOptionHover("Dukan Diet")}
+                    onMouseLeave={handleOptionLeave}
+                  >
+                    Dukan Diet
+                  </div>
+                  <div
+                    className="option"
+                    onMouseEnter={() => handleOptionHover("DASH Diet")}
+                    onMouseLeave={handleOptionLeave}
+                  >
+                    DASH Diet
+                  </div>
+                  <div
+                    className="option"
+                    onMouseEnter={() => handleOptionHover("Day Diet")}
+                    onMouseLeave={handleOptionLeave}
+                  >
+                    Day Diet
+                  </div>
+                  <div
+                    className="option"
+                    onMouseEnter={() =>
+                      handleOptionHover("Mediterranean Diet")
+                    }
+                    onMouseLeave={handleOptionLeave}
+                  >
+                    Mediterranean Diet
+                  </div>
+                </div>
+              )}
+              {isSubDropdownVisible && (
+                <div className="sub-dropdown">
+                  {/* Render subdropdown based on the selected option */}
+                  {selectedOption && (
+                    <>
+                      <div>Sub Option 1 for {selectedOption}</div>
+                      <div>Sub Option 2 for {selectedOption}</div>
+                    </>
+                  )}
+                </div>
+              )}
+            </div>
 
-	const handleLinkClick = () => {
-		// Close the menu when a link is clicked
-		setIsVisible(false);
-		setIsIconVisible(false);
-	};
-
-	return (
-		<div className='header'>
-			<header>
-				<div className='headwrapper'>
-					<div className='logo'>
-						<Link to='/'>
-							<div>DR. ARVIND SABHARWAL</div>
-						</Link>
-					</div>
-
-{/* mobile menu */}
-					<div onClick={handleButtonClick}>
-						{/* <i id='mobilemenuicon' class='fa-solid fa-bars fa-xl' ></i> */}
-						{isIconVisible ? (
-							<i
-								id='mmenu2'
-								class='fa-solid fa-circle-xmark fa-2xl'
-								data-aos='zoom-in'></i>
-						) : (
-							<div id='mmenu'>
-								<div></div>
-								<div></div>
-								<div></div>
-							</div>
-						)}
-					</div>
-
-					{isVisible && (
-						<div className='mobilemenu'>
-							
-							<a
-								href='#about'
-								id='mo1'
-								data-aos='zoom-in-down'
-								// data-aos-duration='500'
-								onClick={handleLinkClick}>
-								<div className='optcontain0'>ABOUT ME</div>
-							</a>
-							<a
-								href='#blog'
-								id='mo1'
-								data-aos='zoom-in-down'
-								// data-aos-duration='500'
-								onClick={handleLinkClick}>
-								<div className='optcontain0'>BLOG</div>
-							</a>
-							<a
-								href='https://api.whatsapp.com/send?phone=9814323293'
-								id='mo1'
-								data-aos='zoom-in-down'
-								// data-aos-duration='500'
-								onClick={handleLinkClick}>
-								<div className='optcontain0'>CALL NOW</div>
-							</a>
-							
-						</div>
-					)}
-
-					
-					<div className='headlinks'>
-						<div className='hlink'>
-							<a href='#about'>ABOUT ME</a>
-						</div>
-						<div className='hlink'>
-							<a href='#blog'>BLOG</a>
-						</div>
-						<div className='hlink'>
-							<a href='https://api.whatsapp.com/send?phone=9814323293'>
-								CALL NOW
-							</a>
-						</div>
-					</div>
-				</div>
-			</header>
-		</div>
-	);
+            <div className="hlink">
+              <a href="#about">ABOUT ME</a>
+            </div>
+            <div className="hlink">
+              <a href="#blog">BLOG</a>
+            </div>
+            <div className="hlink">
+              <a href="https://api.whatsapp.com/send?phone=9814323293">
+                CALL NOW
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  );
 };
 
 export default Header;

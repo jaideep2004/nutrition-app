@@ -12,7 +12,7 @@
 	display: flex;
 	box-shadow: inset 0px 2px 13px #fabc14;
 	border-radius: 50px;
-	padding: 15px ;
+	padding: 25px ;
 }
 .serviceleft {
 	/* border: 1px solid black; */
@@ -45,11 +45,12 @@
 	display: flex;
 	/* border: 1px solid black; */
 	flex: 1;
-
-	justify-content:end;
+align-items: center;
+	justify-content:center;
 }
 .serviceright > img {
 	width: 450px;
+	height: 550px;
 	border-radius: 50px;
 	
 }
