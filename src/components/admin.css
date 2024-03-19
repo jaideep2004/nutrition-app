@@ -29,6 +29,10 @@ body{
     color: white;
     font-size: 20px;
 }
+.adminhead>h1>span{
+    color: #fabc14;
+}
+
 .admincon{
     /* border: 1px solid black; */
     display: flex;
@@ -196,4 +200,32 @@ body{
     font-size: 18px;
     backdrop-filter: blur(20px);
     cursor: pointer;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+.adminwrapper{
+    margin: 20px 10px;
+}
+
+.admincon{
+    
+    align-items: center;
+    justify-content: center;
+}
+.admincon>textarea{
+    width: 320px;
+}
+.admincon>input{
+    width: 320px;
+}
+
+
+
+
+
+
+
+
 }

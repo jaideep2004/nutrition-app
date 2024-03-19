@@ -52,10 +52,7 @@ const BlogPost = () => {
   }
  
 
-  if (!post) {
-    return <p>Loading...</p>;
-  }
-
+ 
   return (
     <div className='singleblog'>
       <h1>{post.title}</h1>

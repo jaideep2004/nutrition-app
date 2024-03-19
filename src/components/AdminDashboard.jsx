@@ -89,7 +89,7 @@ const AdminDashboard = () => {
 		<div className='adminwrapper'>
 			 <ToastContainer  />
 			<div className='adminhead'>
-				<h1>Hello Admin</h1>
+				<h1>Hello <span>Admin</span></h1>
 				{/* <h2>Create Blog </h2> */}
       </div>
 			<div className="admincon1">
