@@ -45,7 +45,7 @@ const Main = () => {
 
 					<div className='rightmain'>
 						<div className='mimg' data-aos='fade-down' data-aos-duration='500'>
-							<img src='./images/p1.webp' alt='' />
+							<img src='./images/n7.jpg' alt='' />
 						</div>
 					</div>
 			</div>
