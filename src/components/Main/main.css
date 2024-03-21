@@ -7,17 +7,25 @@
     transform: rotate(140deg);
     background-color: #fabc14;
     border-radius: 60px;
+    /* z-index: -1; */
     z-index: -1;
+    
 }
+
 .mainwrapper{
+    z-index: -1;
     position: sticky;
     top: 115px;
-    z-index: -1;
+    /* z-index: -1; */
     /* border: 1px solid white; */
     display: flex;
    
     align-items: center;
     padding: 20px 40px;
+}
+.topmain{
+    background-color: #044941;
+    /* z-index: 999; */
 }
 .leftmain{
     /* border: 1px solid white; */
@@ -75,7 +83,7 @@ border-radius: 80px;
     /* border: 1px solid white; */
     gap: 20px;
     color: white;
-    z-index: -1;
+    /* z-index: -1; */
 }
 .main2card{
     flex: 0.8;
@@ -89,7 +97,7 @@ border-radius: 80px;
     justify-content: center;
     gap: 30px;
     box-shadow: inset 0px 0px 8px #fabc14;
-    z-index: 1;
+    /* z-index: 1; */
 }
 .main2card>i{
     color: #fabc14;
@@ -105,7 +113,7 @@ border-radius: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    /* z-index: 1; */
 }
 .main3left>img{
     width: 430px;

@@ -13,12 +13,15 @@
 	box-shadow: inset 0px 2px 13px #fabc14;
 	border-radius: 50px;
 	padding: 25px ;
+	align-items: center;
+	justify-content: center;
+	/* border: 1px solid white; */
 }
 .serviceleft {
 	/* border: 1px solid black; */
 	display: flex;
 	flex-direction: column;
-	gap: 45px;
+	gap: 5px;
 	padding: 10px;
 	flex: 1;
 	/* margin-top: 20px; */
@@ -31,10 +34,14 @@
 	margin-bottom: -2px;
 }
 .service {
+	/* border: 1px solid white; */
 	display: flex;
 	align-items: center;
 	font-size: 18px;
 	color: white;
+}
+.service>p>span{
+	color: #fabc14;
 }
 .service > i {
 	margin-right: 17px;

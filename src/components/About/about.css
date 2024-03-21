@@ -1,16 +1,16 @@
 #about{
-    /* scroll-snap-align: center; */
-	height: 80vh;
+    scroll-snap-align: top;
+	height: 100vh;
 }
 
 
 
 .aboutwrapper {
 	background-color: #044941;
-	padding: 40px 0px;
+	padding-bottom: 30px;
 	display: flex;
     /* border: 1px solid black; */
-    align-items:flex-end;
+    align-items:center;
     justify-content: center;
     /* gap: 20px; */
     

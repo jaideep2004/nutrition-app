@@ -130,7 +130,7 @@ const Testimonials = ({ videos }) => {
   useEffect(() => {
     const handleResize = () => {
       // Adjust slidesToShow based on screen width
-      if (window.innerWidth <= 768) {
+      if (window.innerWidth <= 800) {
         setSlidesToShow(1); // For mobile devices
       } else {
         setSlidesToShow(3); // For bigger screens
