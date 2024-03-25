@@ -11,6 +11,7 @@ import "../Header/responsive.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Testimonials from "../Testimonials/Testimonials";
+import Podcast from "../Podcast/Podcast";
 
 const Main = () => {
 	const videos = [
@@ -31,33 +32,34 @@ const Main = () => {
 		<div>
 			<div className='bgmain'></div>
 			{/* main */}
-			
-				<div className='mainwrapper'>
-					<div className='leftmain'>
-						<div
-							className='mcontent'
-							data-aos='fade-right'
-							data-aos-duration='1000'>
-							Unlock Your Potential with Good Nutrition
-						</div>
-						<i class='fa-solid fa-seedling fa-2xl'></i>
-					</div>
 
-					<div className='rightmain'>
-						<div className='mimg' data-aos='fade-down' data-aos-duration='500'>
-							<img src='./images/n7.jpg' alt='' />
-						</div>
+			<div className='mainwrapper'>
+				<div className='leftmain'>
+					<div className='mcontent'>
+						Ready to Shed Weight, many Metabolic problems and Gain Confidence?
+						Let's Uncover Your<span> Healthiest Self </span>!
 					</div>
+					<i class='fa-solid fa-seedling fa-2xl'></i>
+				</div>
+				<div className='mainwrapbtn'>
+					<a href='#about'>Know More</a>
+				</div>
+				<div className='wrapicon'>
+					<i class='fa-solid fa-chevron-down fa-xl'></i>
+					<i class='fa-solid fa-chevron-down fa-xl'></i>
+					<i class='fa-solid fa-chevron-down fa-xl'></i>
+				</div>
 			</div>
-			<div className='topmain'>
-				<Main2 />
-				<Main3 />
-				<Services />
-				<About />
-				{/* <Main4 /> */}
-				<Testimonials videos={videos} />
-				<LatestBlogs />
-			</div>
+
+			<About />
+			<Services />
+			<Main2 />
+
+			<Podcast />
+			<Main3 />
+
+			<Testimonials videos={videos} />
+			<LatestBlogs />
 		</div>
 	);
 };

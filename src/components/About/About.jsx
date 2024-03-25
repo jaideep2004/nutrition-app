@@ -14,13 +14,16 @@ const About = () => {
     <div className='aboutwrapper' id='about'>
       
 			<div className='aboutleft'>
-				<img src='./images/2.png' alt='' />
+				<img src='./images/4.jpg' alt='' />
 				<i class='fa-solid fa-carrot fa-2xl'></i>
 			</div>
 			<div className='aboutright'>
-				<h1 data-aos='fade-down' data-aos-duration='500'>
+				<div className="abouthead">
+				<h1 data-aos='fade-left' data-aos-duration='500'>
 					About Me
 				</h1>
+				</div>
+				
 				<div className='aboutcon' data-aos='fade-up' data-aos-duration='500'>
 					<p>
 						I am an experienced and certified nutritionist & Lifestyle Coach

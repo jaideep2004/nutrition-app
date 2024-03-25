@@ -14,12 +14,13 @@ body {
 
 /* main header */
 .header {
+	/* background-color: #fabc14; */
 	position: sticky;
 	top: 0px;
-	backdrop-filter: blur(10px);
+	backdrop-filter: blur(20px);
 	z-index: 9999;
 	/* border: 1px solid white; */
-	padding: 30px 50px;
+	padding: 30px 40px;
 }
 .headwrapper {
 	display: flex;
@@ -30,10 +31,36 @@ body {
 	align-items: center;
 	/* padding: 30px 50px; */
 }
+.headwrapper > a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.logo {
+	display: flex;
+	flex-direction: column;
+	font-size: 26px;
+	font-weight: 700;
+	cursor: pointer;
+	color: #fabc14;
+	text-shadow: 1px 1px 1px black;
+	/* border: 1px solid white; */
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	backdrop-filter: blur(10px);
+}
+.logo > div:nth-child(2) {
+	color: white;
+	font-weight: 500;
+	font-size: 19px;
+}
+
 .headlinks {
 	display: flex;
 	font-size: 18px;
-	gap: 45px;
+	font-weight: 600;
+	gap: 33px;
 	align-items: center;
 	/* border: 1px solid white; */
 	border-radius: 10px;
@@ -43,7 +70,6 @@ body {
 	position: relative;
 	/* border: 1px solid white; */
 	cursor: pointer;
-	font-weight: 600;
 
 	color: white;
 	padding-bottom: 5px;
@@ -53,6 +79,7 @@ body {
 	&:hover {
 		box-shadow: 0px 2px 0px white;
 		transform: translateY(-4px);
+		color: #fabc14;
 	}
 }
 .hlink > a {
@@ -64,23 +91,32 @@ body {
 }
 
 .hlink:nth-child(4) {
+	background-color: #fabc14;
+	font-weight: 600;
+	padding: 10px ;
+	border-radius: 15px;
+	
+	
+}
+.hlink:nth-child(5) {
 	background-color: #044941;
 	font-weight: 600;
 	padding: 10px 20px;
-	border-radius: 20px;
-	/* color: white; */
+	border-radius: 15px;
+	box-shadow: inset 0px 0px 5px #fabc14;
+	animation: callAnimate 1s infinite;
 }
-.logo {
-	font-size: 26px;
-	font-weight: 700;
-	cursor: pointer;
-	color: #fabc14;
-	text-shadow: 1px 1px 1px black;
-	/* border: 1px solid white; */
-}
-.logo > a {
-	text-decoration: none;
-	color: inherit;
+
+@keyframes callAnimate {
+	0% {
+		box-shadow: inset 0px 2px 5px #fabc14;
+	}
+	50% {
+		box-shadow: inset 2px 0px 5px #fabc14;
+	}
+	100% {
+		box-shadow: inset 0px 2px 5px #fabc14;
+	}
 }
 
 /* headr2 */
@@ -93,7 +129,6 @@ body {
 	padding: 10px;
 	background-color: white;
 	border-radius: 5px;
-	
 }
 .doption {
 	background-color: #fabc14;
@@ -105,8 +140,6 @@ body {
 	display: flex;
 	align-items: center;
 	min-width: 170px;
-
-
 }
 .maind {
 	/* border: 1px solid black; */
@@ -114,7 +147,7 @@ body {
 	top: 35px;
 	right: 10px;
 	display: flex;
-	
+
 	/* right: 10px; */
 }
 .submenu {
@@ -132,10 +165,9 @@ body {
 	padding: 15px;
 	font-size: 17px;
 	border-radius: 5px;
-
 }
 
-.submenu>div>i{
+.submenu > div > i {
 	margin-bottom: 20px;
 	cursor: pointer;
 }

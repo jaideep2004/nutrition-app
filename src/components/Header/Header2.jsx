@@ -17,7 +17,7 @@ const Header2 = () => {
 	const [showSubMenu, setShowSubMenu] = useState(false);
 
 	const handleMainLinkClick = (e) => {
-		e.preventDefault()
+		e.preventDefault();
 		setShowDropdown(!showDropdown);
 		setShowSubMenu(false); // Close subdropdown when main dropdown is toggled
 	};
@@ -130,11 +130,12 @@ const Header2 = () => {
 		<div className='header'>
 			<header>
 				<div className='headwrapper'>
-					<div className='logo'>
-						<Link to='/'>
+					<Link to='/'>
+						<div className='logo'>
 							<div>DR. ARVIND SABHARWAL</div>
-						</Link>
-					</div>
+							<div>(Certified Nutritionist)</div>
+						</div>
+					</Link>
 
 					{/* mobile menu */}
 					<div onClick={handleButtonClick}>
@@ -161,17 +162,16 @@ const Header2 = () => {
 								id='mo1'
 								data-aos='zoom-in-down'
 								onClick={handleLinkClick}>
-								<div >ABOUT ME</div>
+								<div>ABOUT ME</div>
 							</a>
 							<a
 								href='#'
 								id='mo1'
 								data-aos='zoom-in-down'
 								onClick={handleMainLinkClick}>
-                                <div >DIET TYPES</div>
-                                
+								<div>DIET TYPES</div>
 							</a>
-                            <div className='maind'>
+							<div className='maind'>
 								{showDropdown && (
 									<div className='dropdown-content'>
 										{options.map((option) => (
@@ -204,14 +204,21 @@ const Header2 = () => {
 								id='mo1'
 								data-aos='zoom-in-down'
 								onClick={handleLinkClick}>
-								<div >BLOG</div>
+								<div>BLOG</div>
+							</a>
+							<a
+								href='#'
+								id='mo1'
+								data-aos='zoom-in-down'
+								onClick={handleLinkClick}>
+								<div>SIGN UP</div>
 							</a>
 							<a
 								href='https://api.whatsapp.com/send?phone=9814323293'
 								id='mo1'
 								data-aos='zoom-in-down'
 								onClick={handleLinkClick}>
-								<div >CALL NOW</div>
+								<div>CALL NOW</div>
 							</a>
 						</div>
 					)}
@@ -224,7 +231,6 @@ const Header2 = () => {
 
 						<div className='hlink'>
 							<a href='' onClick={handleMainLinkClick}>
-								
 								DIET TYPES
 							</a>
 							<div className='maind'>
@@ -259,6 +265,11 @@ const Header2 = () => {
 
 						<div className='hlink'>
 							<a href='#blog'>BLOG</a>
+						</div>
+						<div className='hlink'>
+							<a href='#blog'>
+								SIGN UP
+							</a>
 						</div>
 						<div className='hlink'>
 							<a href='https://api.whatsapp.com/send?phone=9814323293'>

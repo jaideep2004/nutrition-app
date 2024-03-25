@@ -2,22 +2,17 @@
     display: flex;
     flex-direction: column;
     background-color: #044941;
-    border: 10px solid white;
+    border: 5px solid white;
     /* border-radius: 10px; */
     overflow-x: scroll;
-   
-}
-#blog{
-    height: 60vh;
+   padding-top: 20px;
 }
 
 
 
 .latestblogs{
-    /* border: 1px solid white; */
     display: flex;
     flex-direction: column;
-    border-top: 1px solid white;
 
 }
 .latesthead{
@@ -27,6 +22,7 @@
     /* text-align: center; */
 }
 .latestcon{
+    /* padding-top: 60px; */
     /* border: 1px solid black; */
     display: flex;
     align-items: center;
@@ -35,7 +31,7 @@
 }
 .latestcon>div{
     border: 1px solid #fabc14;
-    padding: 15px 40px;
+    padding: 35px 40px;
     display: flex;
     flex-direction: column;
     /* border-radius: 20px; */

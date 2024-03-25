@@ -1,15 +1,15 @@
 
 .testwrap{
    text-align: center;
-  
-   background-color: #fabc14;
-   /* background-color: #044941; */
-   padding: 10px 40px 40px 40px ;
+  border-top: 1px solid #fabc14;
+   background-color: #044941;
+   /* background-color: white; */
+   padding: 40px 40px 90px 40px ;
 }
 
 .testwrap>h1{
-    color: #044941;
-    font-size: 40px;
+    color: #fabc14;
+    font-size: 43px;
     font-weight: 600;
     margin-bottom: 35px;
     /* border: 1px solid white; */
@@ -22,7 +22,7 @@ border-radius: 20px;
 .videocontain>p{
     font-size: 18px;
     font-weight: 600;
-    color: #044941;
+    color: white;
 }
 
 .slider1>div{
