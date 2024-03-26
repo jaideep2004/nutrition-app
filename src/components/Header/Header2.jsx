@@ -131,7 +131,7 @@ const Header2 = () => {
 			<header>
 				<div className='headwrapper'>
 					<Link to='/'>
-						<div className='logo'>
+						<div className='logo' onClick={handleLinkClick}>
 							<div>DR. ARVIND SABHARWAL</div>
 							<div>(Certified Nutritionist)</div>
 						</div>
@@ -206,13 +206,17 @@ const Header2 = () => {
 								onClick={handleLinkClick}>
 								<div>BLOG</div>
 							</a>
+
 							<a
 								href='#'
 								id='mo1'
 								data-aos='zoom-in-down'
 								onClick={handleLinkClick}>
-								<div>SIGN UP</div>
+								<Link to='signup' className="mobilesign">
+									<div>SIGN UP</div>
+								</Link>
 							</a>
+
 							<a
 								href='https://api.whatsapp.com/send?phone=9814323293'
 								id='mo1'
@@ -266,11 +270,13 @@ const Header2 = () => {
 						<div className='hlink'>
 							<a href='#blog'>BLOG</a>
 						</div>
-						<div className='hlink'>
-							<a href='#blog'>
-								SIGN UP
-							</a>
-						</div>
+
+						<Link to='signup'>
+							<div className='hlinksign'>
+								<a href=''>SIGN UP</a>
+							</div>
+						</Link>
+
 						<div className='hlink'>
 							<a href='https://api.whatsapp.com/send?phone=9814323293'>
 								CALL NOW

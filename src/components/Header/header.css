@@ -65,6 +65,9 @@ body {
 	/* border: 1px solid white; */
 	border-radius: 10px;
 }
+.headlinks>a{
+	text-decoration: none;
+}
 
 .hlink {
 	position: relative;
@@ -90,14 +93,31 @@ body {
 	color: inherit;
 }
 
-.hlink:nth-child(4) {
+.hlinksign{
+	
 	background-color: #fabc14;
 	font-weight: 600;
-	padding: 10px ;
+	padding: 10px 20px;
 	border-radius: 15px;
-	
-	
+	transition: all 0.3s ease;
+	&:hover {
+		box-shadow: 0px 2px 0px white;
+		transform: translateY(-4px);
+		color: #044941;
+		
+	}
 }
+.hlinksign>a{
+	text-decoration: none;
+	color: white;
+	text-shadow: 0px 2px 2px black;
+	&:hover {
+		
+		color: #044941;
+		
+	}
+}
+
 .hlink:nth-child(5) {
 	background-color: #044941;
 	font-weight: 600;

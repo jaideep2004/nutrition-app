@@ -51,10 +51,7 @@
 		padding: 20px;
 		border-radius: 15px;
 	}
-	#mo1:nth-child(2) {
-		/* background-color: black; */
-		padding: 20px 90px;
-	}
+
 	#mo1 {
 		text-align: center;
 		border: 1px solid #044941;
@@ -73,6 +70,19 @@
 		/* z-index: -1; */
 	}
 
+	#mo1:nth-child(2) {
+		/* background-color: black; */
+		padding: 20px 90px;
+	}
+	#mo1:nth-child(5) {
+		padding: 0px 0px;
+	}
+	.mobilesign {
+		padding: 20px 113px;
+		/* border: 10px solid black; */
+		text-decoration: none;
+		color: inherit;
+	}
 	/* header */
 
 	.header {
@@ -99,6 +109,9 @@
 	.hlink {
 		display: none;
 	}
+	.hlinksign {
+		display: none;
+	}
 	.maind {
 		/* border: 1px solid black; */
 		z-index: 9999;
@@ -109,7 +122,7 @@
 	}
 
 	.submenu {
-		scale: 0.86;
+		scale: 0.85 0.76;
 		margin-top: 0px;
 		margin-left: -240px;
 		overflow-y: scroll;
@@ -120,11 +133,13 @@
 		scale: 0.9;
 	}
 	.mcontent {
-		scale: 0.7;
+		scale: 0.76 0.7;
 		margin-top: -50px;
+		
 	}
 
 	.mainwrapbtn {
+		text-align: center;
 		margin-top: -120px;
 		padding: 0px;
 	}
@@ -134,7 +149,7 @@
 		margin-top: 200px;
 	}
 	.aboutleft {
-		margin-top: 850px;
+		margin-top: 930px;
 	}
 	.aboutleft > img {
 		scale: 0.9;
@@ -143,6 +158,8 @@
 	.aboutright {
 		margin-top: -10px;
 		padding-bottom: 60px;
+		margin-left: -20px;
+		margin-right: -21px;
 	}
 
 	/* services */
@@ -156,8 +173,8 @@
 		margin-top: 250px;
 		gap: 40px;
 		/* scale: 1.1; */
-		margin-left: -20px;
-		margin-right: -20px;
+		margin-left: -21px;
+		margin-right: -21px;
 	}
 	.service2 {
 		/* scale: 1.1; */
@@ -180,7 +197,7 @@
 	}
 
 	.main3left > img {
-		scale: 0.8 ;
+		scale: 0.8;
 	}
 
 	/* podcast */
@@ -194,21 +211,45 @@
 		scale: 0.6;
 		margin-top: -50px;
 	}
-	.podcasthead{
+	.podcasthead {
 		text-align: center;
 	}
 
+	/* single blog */
+	.singleblog{
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+	.comments {
+		scale: 0.99;
+		margin-top: 300px;
+		margin-bottom: -10px;
+	}
+	.comments > input {
+		width: 210px;
+	}
 
-
-/* single blog */
-.comments{
-	scale: 0.85;
-	margin-top: 300px;
-	margin-bottom: -20px;
-}
-.comments>input{
-	width: 200px;
-}
+	/* signup */
+	.signform {
+		scale: 0.74 0.9;
+	}
+	
+	.signform > div > input {
+		
+		display: flex;
+		width: 200px;
+		scale: 1 1.2;
+		margin-top: 10px;
+		
+	}
+	.signform > div > label{
+		margin-left: 25px;
+	} 
+	.signform>button{
+		margin-right: 70px;
+		scale: 1.2;
+		margin-top: 10px;
+	}
 
 	/* footer */
 	.footerwrap {
@@ -219,10 +260,9 @@
 	}
 	.footdown {
 		flex-direction: column;
-		
 	}
 	.footright1 {
-		margin-top: -200px;
+		margin-top: -210px;
 		gap: 60px;
 	}
 }

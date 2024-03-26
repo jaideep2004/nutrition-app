@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Testimonials from "../Testimonials/Testimonials";
 import Podcast from "../Podcast/Podcast";
+import Signup from "../Signup/Signup";
 
 const Main = () => {
 	const videos = [
@@ -60,6 +61,7 @@ const Main = () => {
 
 			<Testimonials videos={videos} />
 			<LatestBlogs />
+			{/* <Signup/> */}
 		</div>
 	);
 };

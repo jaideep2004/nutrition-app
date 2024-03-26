@@ -13,7 +13,7 @@ const Podcast = () => {
 	return (
 		<div>
 			<div className='podcastwrap'>
-				<div className='podcasthead'  data-aos='zoom-in-right'
+				<div className='podcasthead'  data-aos='fade-down'
 					data-aos-duration='500'>
 					<h1>Watch My Podcast</h1>
 					<p>on reversal of Diabetes and Thyroid</p>
