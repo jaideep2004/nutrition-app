@@ -13,14 +13,15 @@ import "aos/dist/aos.css";
 import Testimonials from "../Testimonials/Testimonials";
 import Podcast from "../Podcast/Podcast";
 import Signup from "../Signup/Signup";
+import NumberPatients from "./NumberPatients";
 
 const Main = () => {
 	const videos = [
 		{
 			src: "./images/v1.mp4",
-			label: "Relief from High Blood Pressure and Sugar",
+			label: "Relief from High Blood Pressure and Sugar and High Blood Sugar",
 		},
-		{ src: "./images/v2.mp4", label: "Relief from High Blood Pressure " },
+		{ src: "./images/v2.mp4", label: "Relief from High Blood Pressure and High Blood Sugar " },
 		{ src: "./images/v3.mp4", label: "Relief from Thyroid and Bloating " },
 		{ src: "./images/v4.mp4", label: "Relief from Lack of Energy and Obesity" },
 	];
@@ -51,7 +52,7 @@ const Main = () => {
 					<i class='fa-solid fa-chevron-down fa-xl'></i>
 				</div>
 			</div>
-
+			{/* <NumberPatients/> */}
 			<About />
 			<Services />
 			<Main2 />
@@ -62,6 +63,7 @@ const Main = () => {
 			<Testimonials videos={videos} />
 			<LatestBlogs />
 			{/* <Signup/> */}
+			
 		</div>
 	);
 };

@@ -11,39 +11,43 @@ const About = () => {
 	}, []);
 
 	return (
-    <div className='aboutwrapper' id='about'>
-      
+		<div className='aboutwrapper' id='about'>
+			<div className='abouthead'>
+					<h1 data-aos='fade-down' data-aos-duration='500'>
+						About Me
+					</h1>
+				</div>
+
+			<div className="about2">
 			<div className='aboutleft'>
-				<img src='./images/4.jpg' alt='' />
+				<img src='./images/pic1.jpeg' alt='' />
 				<i class='fa-solid fa-carrot fa-2xl'></i>
 			</div>
 			<div className='aboutright'>
-				<div className="abouthead">
-				<h1 data-aos='fade-left' data-aos-duration='500'>
-					About Me
-				</h1>
-				</div>
 				
+
 				<div className='aboutcon' data-aos='fade-up' data-aos-duration='500'>
 					<p>
-						I am an experienced and certified nutritionist & Lifestyle Coach
-						from <span>National Skill Development Corporation (NSDC)</span> and
-						linked with <span>dlife.in</span> with 8 years of practice providing
-						individualized advice to my clients. I have an immense passion for
-						the healing power of food and nutrients having experienced their
-						effects first hand. We know the food we eat affects every cell in
-						the body; it can make the difference between feeling{" "}
-						<b>‘all right’</b> and feeling <b>‘great’</b>. I will show you
-						alternatives and inspire you to make changes as you gain control and
-						bring your body back into balance. We will work together to create a
-						new lifestyle – something that works for you. My work is focused on
-						the unique nutritional needs of each individual. The degree of
-						biological variation between individuals is too vast to guarantee
-						that the same treatment will have the same effect for everyone,
-						therefore, there’s never a one-size-fits-all approach.
+						Indian - LCHF Nutrition Coach
+						<br />
+						DLIFE.IN ( India's Only LCHF Community) <br />
+						Practicing Health & Nutrition (LCHF) Coach – Since 2019.
+						<br />
+						<br />
+						2000+ Clients (personalized Coaching) – spread all across India &
+						Globe.
+						<br />
+						LCHF Nutrition, Sports Nutritionist, Author, Coach, Motivator.
+						<br />
+						<br />
+						22 Years of EDUCATIONAL Experience <br />
+						Came to Wellness space to correct his own Health <br />
+						6+ Years of Experience in Wellness Space <br />
+						2000+ Clients Served
 					</p>
 				</div>
-			</div>
+				</div>
+				</div>
 		</div>
 	);
 };

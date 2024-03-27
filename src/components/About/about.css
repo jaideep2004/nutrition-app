@@ -2,15 +2,22 @@
 	padding-top: 40px;
 	height: 100vh;
 	background-color: #044941;
-	display: flex;
+	/* display: flex; */
 	/* border: 1px solid black; */
-	align-items: center;
+	/* align-items: center; */
 	justify-content: center;
 	border-top-left-radius: 50px;
 	border-top-right-radius: 50px;
 box-shadow: inset 0px 1px 1px white;
 /* backdrop-filter: blur(20px); */
 
+}
+
+.about2{
+	/* border: 2px solid white; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .aboutleft {
@@ -23,8 +30,8 @@ box-shadow: inset 0px 1px 1px white;
 	padding: 10px;
 }
 .aboutleft > img {
-	width: 350px;
-	height: 500px;
+	/* width: 350px; */
+	height: 450px;
 
 	border-radius: 10px;
 	/* filter: blur(5px); */
@@ -44,24 +51,29 @@ box-shadow: inset 0px 1px 1px white;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 20px 50px;
+	padding: 10px 50px;
 	background-color: #044941;
 	color: white;
+	/* margin-top: -20px; */
 }
 .aboutcon {
 	border: 1px solid #fabc14;
 	padding: 20px;
 	border-top-right-radius: 40px;
 	border-bottom-left-radius: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .abouthead > h1 {
 	font-size: 42px;
 	font-weight: 600;
 	color: #fabc14;
+	text-align: center;
 }
 .aboutcon > p {
-	text-align: center;
+	/* text-align: center; */
 	font-size: 19px;
 	letter-spacing: 1px;
 	font-weight: normal;

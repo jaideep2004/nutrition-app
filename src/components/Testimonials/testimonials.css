@@ -14,15 +14,24 @@
     margin-bottom: 35px;
     /* border: 1px solid white; */
 }
+.videocontain{
+    /* border: 1px solid white; */
+  
+
+}
 
 .videocontain>video{
 border-radius: 20px;
 
 }
-.videocontain>p{
-    font-size: 18px;
-    font-weight: 600;
+.videolabel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid white; */
+    margin: 0px 40px;
     color: white;
+    font-size: 18px;
 }
 
 .slider1>div{

@@ -49,11 +49,19 @@ body {
 	justify-content: center;
 	gap: 5px;
 	backdrop-filter: blur(10px);
+	transition: all 0.4s ease;
+	&:hover{
+		scale: 1.1;
+		color: yellow;
+	}
 }
 .logo > div:nth-child(2) {
 	color: white;
 	font-weight: 500;
 	font-size: 19px;
+	&:hover{
+		color: #fabc14;
+	}
 }
 
 .headlinks {
