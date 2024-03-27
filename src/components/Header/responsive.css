@@ -148,15 +148,18 @@
 		flex-direction: column;
 		margin-top: 200px;
 	}
+	.about2{
+		flex-direction: column;
+	}
 	.aboutleft {
-		margin-top: 930px;
+		/* margin-top: 930px; */
 	}
 	.aboutleft > img {
-		scale: 0.9;
+		scale: 0.8;
 	}
 
 	.aboutright {
-		margin-top: -10px;
+		/* margin-top: -10px; */
 		padding-bottom: 60px;
 		margin-left: -20px;
 		margin-right: -21px;
@@ -165,7 +168,7 @@
 	/* services */
 
 	.servicewrapper {
-		margin-top: 700px;
+		margin-top: 200px;
 	}
 
 	.service1 {
