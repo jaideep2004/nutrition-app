@@ -267,6 +267,11 @@ const Header2 = () => {
 							</div>
 						</div>
 
+						<Link to='dietplans'>
+						<div className='hlink'>
+							<a href='#'>DIET PLANS</a>
+							</div>
+							</Link>
 						<div className='hlink'>
 							<a href='#blog'>BLOG</a>
 						</div>
@@ -278,6 +283,7 @@ const Header2 = () => {
 						</Link>
 
 						<div className='hlink'>
+						<i class="fa-brands fa-whatsapp fa-beat fa-lg"></i>
 							<a href='https://api.whatsapp.com/send?phone=9814323293'>
 								CALL NOW
 							</a>

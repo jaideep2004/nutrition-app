@@ -1,5 +1,5 @@
 #about {
-	padding-top: 40px;
+	padding-top: 100px;
 	height: 100vh;
 	background-color: #044941;
 	/* display: flex; */
@@ -8,9 +8,23 @@
 	justify-content: center;
 	border-top-left-radius: 50px;
 	border-top-right-radius: 50px;
-box-shadow: inset 0px 1px 1px white;
+/* box-shadow: inset 0px 1px 1px white; */
 /* backdrop-filter: blur(20px); */
+position: relative;
 
+}
+.bgmain2{
+	top: 100px;
+	left: -70px;
+	/* position: fixed; */
+	position: absolute;
+	width: 500px;
+	height: 400px;
+	transform: rotate(140deg);
+	background-color: #fabc14;
+	border-radius: 50px;
+	z-index: -1;
+	opacity: 0.9;
 }
 
 .about2{
@@ -18,6 +32,7 @@ box-shadow: inset 0px 1px 1px white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	
 }
 
 .aboutleft {
@@ -28,6 +43,7 @@ box-shadow: inset 0px 1px 1px white;
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
+	z-index: 2;	
 }
 .aboutleft > img {
 	/* width: 350px; */
@@ -42,7 +58,7 @@ box-shadow: inset 0px 1px 1px white;
 	opacity: 0.07;
 	scale: 5;
 	position: absolute;
-	left: 700px;
+	right: 50px;
 }
 .aboutright {
 	/* border: 1px solid black; */
@@ -55,15 +71,18 @@ box-shadow: inset 0px 1px 1px white;
 	background-color: #044941;
 	color: white;
 	/* margin-top: -20px; */
+	
 }
 .aboutcon {
-	border: 1px solid #fabc14;
-	padding: 20px;
-	border-top-right-radius: 40px;
-	border-bottom-left-radius: 40px;
+	/* border: 1px solid rgb(250, 188, 20); */
+	padding: 20px 40px;
+	border-top-right-radius: 75px;
+	border-bottom-left-radius: 45px;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	box-shadow:  0px 0px 10px #fabc14;
 }
 
 .abouthead > h1 {

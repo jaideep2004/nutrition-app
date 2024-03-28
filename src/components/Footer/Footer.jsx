@@ -11,8 +11,8 @@ const Footer = () => {
 					<div className='footleft1'>
 						<table>
 							<tr>
-								<td>Email</td>
-								<td></td>
+								<td>Email :</td>
+								<td>arvindsabharwal1976@gmail.com</td>
 							</tr>
 							<tr>
 								<td>Phone No.</td>

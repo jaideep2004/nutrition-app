@@ -1,13 +1,13 @@
 .bgmain {
-	top: -200px;
-	right: -680px;
+	top: -150px;
+	right: -710px;
 	position: fixed;
 	/* position: absolute; */
 	width: 750px;
 	height: 800px;
 	transform: rotate(140deg);
 	background-color: #fabc14;
-	border-radius: 180px;
+	border-radius: 50px;
 	z-index: -1;
 }
 
@@ -15,7 +15,7 @@
 	/* border: 1px solid #fabc14; */
 	display: flex;
 	flex-direction: column;
-	height: 90vh;
+	height: 85vh;
 	align-items: center;
 	justify-content: center;
 	padding: 0px 120px;
@@ -28,8 +28,8 @@
 }
 
 .mcontent {
-	font-style: italic;
-	/* font-family: "Edu TAS Beginner", cursive; */
+	/* font-style: italic; */
+
 	text-shadow: 0px 0px 2px black;
 	color: white;
 	font-size: 49px;
@@ -51,62 +51,55 @@
 }
 .mainwrapbtn {
 	display: flex;
-align-items: center;
-justify-content: center;
+	align-items: center;
+	justify-content: center;
 	background-color: #fabc14;
 	/* padding: 10px; */
 	border-radius: 10px;
-    transition: all 0.3s ease;
-    &:hover {
-       background-color: white;
-       border-radius: 20px;
-       
-      }
+	transition: all 0.3s ease;
+	&:hover {
+		background-color: white;
+		border-radius: 20px;
+	}
 }
-
-
 
 .mainwrapbtn > a {
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 21px;
+
 	color: #044941;
 	padding: 10px 30px;
 	/* border: 1px solid white; */
-    
 }
 
 .wrapicon {
 	display: flex;
 	flex-direction: column;
 	color: #fabc14;
-   
 }
 .wrapicon > i {
 	margin-top: 10px;
 	/* animation: downAnimate infinite 1s; */
 }
 
-.wrapicon>i:nth-child(1){
-    animation: downAnimate  infinite   3s;
-
+.wrapicon > i:nth-child(1) {
+	animation: downAnimate infinite 3s;
 }
-.wrapicon>i:nth-child(2){
-    animation: downAnimate infinite   3s;
-    animation-delay: 0.5s;
+.wrapicon > i:nth-child(2) {
+	animation: downAnimate infinite 3s;
+	animation-delay: 0.5s;
 }
-.wrapicon>i:nth-child(3){
-    animation: downAnimate  infinite  3s;
-    animation-delay: 1s;
+.wrapicon > i:nth-child(3) {
+	animation: downAnimate infinite 3s;
+	animation-delay: 1s;
 }
 @keyframes downAnimate {
 	0% {
-        opacity: 0;
-		
+		opacity: 0;
 	}
 	100% {
 		opacity: 1;
 	}
-	
 }
 
 /* main2 */
@@ -114,7 +107,7 @@ justify-content: center;
 .main2wrapper {
 	/* margin-top: 200px; */
 	/* height: 90vh; */
-	padding: 80px 40px;
+	padding: 40px;
 	background-color: #044941;
 	display: flex;
 	/* border: 1px solid white; */
@@ -153,32 +146,66 @@ justify-content: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	
+	/* height: 40vh; */
+	gap: 30px;
 }
 .main3left > img {
-	width: 450px;
-	border-radius: 20px;
+	height: 400px;
+	/* margin-left: -20px; */
+	border-top-right-radius: 90px;
+	border-bottom-right-radius: 90px;
 	box-shadow: 0px 0px 2px #fabc14;
 }
 .main3left {
 	display: flex;
 	align-items: center;
-	/* justify-content: center; */
-	padding: 10px;
-	flex: 0.9;
+
 	/* border: 1px solid white; */
 }
 .main3right {
-	padding: 10px;
+	padding: 20px;
 	display: flex;
 	flex-direction: column;
-	flex: 1;
+	/* flex: 1; */
 	color: white;
 	/* border: 1px solid white; */
-	
+	box-shadow: 2px 2px 5px #fabc14;
+
+	/* border-radius: 20px; */
 }
 
-.main3right > h3 {
+.patientscontain {
+	/* border: 1px solid white; */
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #044941;
+	height: 60vh;
+}
+.patienttext {
+	text-align: center;
 	color: #fabc14;
 	font-size: 20px;
+}
+.pcontain {
+	border: 1px solid #fabc14 ;
+	/* box-shadow: inset 0px 0px 10px #fabc14; */
+	margin: 0px 10px;
+	padding: 25px 30px;
+	color: white;
+	
+	width: 300px;
+	/* height: 140px; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 15px;
+	border-radius: 15px;
+	backdrop-filter: blur(20px);
+}
+
+.numberpatients{
+	font-size: 25px;
 }

@@ -50,15 +50,23 @@ body {
 	gap: 5px;
 	backdrop-filter: blur(10px);
 	transition: all 0.4s ease;
+	/* box-shadow: inset 0px 0px 10px #fabc14; */
+	padding: 10px;
+
+	border-radius: 20px;
 	&:hover{
-		scale: 1.1;
+		scale: 1.05;
+
 		color: yellow;
 	}
 }
 .logo > div:nth-child(2) {
+	/* border: 1px solid white; */
 	color: white;
 	font-weight: 500;
 	font-size: 19px;
+	padding: 0px 50px;
+	transition: all 0.4s ease;
 	&:hover{
 		color: #fabc14;
 	}
@@ -66,9 +74,9 @@ body {
 
 .headlinks {
 	display: flex;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 600;
-	gap: 33px;
+	gap: 20px;
 	align-items: center;
 	/* border: 1px solid white; */
 	border-radius: 10px;
@@ -126,13 +134,16 @@ body {
 	}
 }
 
-.hlink:nth-child(5) {
+.hlink:nth-child(6) {
 	background-color: #044941;
 	font-weight: 600;
-	padding: 10px 20px;
+	padding: 10px 15px;
 	border-radius: 15px;
 	box-shadow: inset 0px 0px 5px #fabc14;
 	animation: callAnimate 1s infinite;
+}
+.hlink:nth-child(6)>i{
+	color: white;
 }
 
 @keyframes callAnimate {

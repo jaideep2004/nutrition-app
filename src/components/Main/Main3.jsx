@@ -12,19 +12,15 @@ const Main3 = () => {
 			<div className='main3wrapper'>
 				<div
 					className='main3left'
-					data-aos='zoom-in-up'
+					data-aos='fade-right'
 					data-aos-duration='500'>
-					<img src='./images/a1.jpeg' alt='' />
+					<img src='./images/n3.jpg' alt='' />
 				</div>
 				<div className='main3right' data-aos='fade-left' data-aos-duration='500'>
 					<h1 >
-						"The food you eat can be either the safest and most powerful form of
-						medicine or the slowest form of poison"
+						"Fuel your body with goodness! Embrace vibrant health with every bite. "
 					</h1>
-					<h3 >
 					
-						-Ann Wigmore
-					</h3>
 				</div>
 			</div>
 		</div>

@@ -11,18 +11,18 @@ const Podcast = () => {
 		AOS.init();
 	}, []);
 	return (
-		<div>
+		<div className="pod1">
 			<div className='podcastwrap'>
 				<div className='podcasthead'  data-aos='fade-down'
 					data-aos-duration='500'>
 					<h1>Watch My Podcast</h1>
-					<p>on reversal of Diabetes and Thyroid</p>
+					<h3>on reversal of Diabetes and Thyroid</h3>
 				</div>
 				<div className='videowrap'>
 					<Video embedId='VnKL2awwKjg' />
 				</div>
 			</div>
-		</div>
+			</div>
 	);
 };
 

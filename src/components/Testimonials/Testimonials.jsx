@@ -7,7 +7,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./testimonials.css";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 const Testimonials = ({ videos }) => {
+
+  useEffect(() => {
+		AOS.init();
+	}, []);
   const sliderRef = useRef(null);
   const [slidesToShow, setSlidesToShow] = useState(2); // Initial value for bigger screens
 
@@ -68,7 +75,7 @@ const Testimonials = ({ videos }) => {
               Your browser does not support the video tag.
               
             </video>
-            <div className="videolabel">
+            <div className="videolabel"  >
             <p>{video.label}</p>
             </div>
             

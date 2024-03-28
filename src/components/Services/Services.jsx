@@ -13,16 +13,17 @@ const Services = () => {
 
 	return (
 		<div className='servicewrapper'>
-			<div className='service1' data-aos='fade-up' data-aos-duration='500'>
-				<div className='servicehead'>
-					<h1>Our Services</h1>
-				</div>
-				<div className='service2' >
-					<div className='service'>
+			<div className='servicehead' data-aos='fade-down' data-aos-duration='500'>
+				<h1>Our Services</h1>
+			</div>
+			<div className="servicecon">
+			<div className="service1" data-aos='fade-up' data-aos-duration='500'>
+			<div className='service'>
 						<i class='fa-solid fa-heartbeat fa-xl'></i>
 						<p>
-							Expert guidance for managing <span>Type 1</span> and <span>Type 2 diabetes</span> with
-							personalized meal plans and blood sugar monitoring.
+							Expert guidance for managing <span>Type 1</span> and{" "}
+							<span>Type 2 diabetes</span> with personalized meal plans and
+							blood sugar monitoring.
 						</p>
 					</div>
 					<div className='service'>
@@ -49,7 +50,8 @@ const Services = () => {
 					<div className='service'>
 						<i class='fa-solid fa-stethoscope fa-xl'></i>
 						<p>
-							Specialized dietary recommendations for <span>Hypertension (High Blood Pressure) </span>
+							Specialized dietary recommendations for{" "}
+							<span>Hypertension (High Blood Pressure) </span>
 							management, emphasizing on sodium restriction and balanced
 							nutrition.
 						</p>
@@ -77,6 +79,9 @@ const Services = () => {
 							overall cardiovascular health.
 						</p>
 					</div>
+			</div>
+			<div className="service2" data-aos='fade-up' data-aos-duration='600'>
+
 					<div className='service'>
 						<i class='fa-solid fa-heart fa-xl'></i>
 						<p>
@@ -128,8 +133,11 @@ const Services = () => {
 							promote healthy weight gain.
 						</p>
 					</div>
-				</div>
+
 			</div>
+			</div>
+			
+			
 		</div>
 	);
 };

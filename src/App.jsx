@@ -10,6 +10,9 @@ import Services from "./components/Services/Services";
 import Main2 from "./components/Main/Main2";
 import Podcast from "./components/Podcast/Podcast";
 import Signup from "./components/Signup/Signup";
+import Success from "./components/Success";
+import Fail from "./components/Fail";
+import DietPlans from "./components/DietPlans/DietPlans";
 
 function App() {
 	return (
@@ -24,6 +27,10 @@ function App() {
 					<Route path='/' element={<Main />} />
 					<Route path='/blog/:id' element={<BlogPost />} />
 					<Route path='/signup' element={<Signup />} />
+					<Route path='/success' element={<Success />} />
+					<Route path='/fail' element={<Fail />} />
+					<Route path='/dietplans' element={<DietPlans />} />
+
 				</Routes>
 				
 				

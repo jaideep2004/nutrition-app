@@ -1,0 +1,105 @@
+.maindietwrap{
+    /* border: 1px solid white; */
+    margin: 0px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.dietwrap{
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.dietwrap1{
+    flex: 0.9;
+
+}
+.dietwrap1head{
+    text-align: center;
+    color: #fabc14;
+}
+.dietwrap1>ul{
+    color: white;
+    font-size: 19px;
+}
+.dietwrap1>ul>li{
+    margin-top: 5px;
+}
+.dietwrap1>ul>li::marker{
+    color: #fabc14;
+    font-size: 25px;
+}
+
+.programtxt{
+    margin-top: 30px;
+    color: white;
+    font-weight: 200;
+    font-size: 18px;
+    /* border: 1px solid white; */
+    padding: 30px;
+}
+.programtxt>p{
+    line-height: 1.6;
+}
+.dietwrap2{
+    flex: 1;
+    
+}
+.diethead>h1{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.dietPlan{
+    display: flex;
+}
+.planimg{
+    height: 150px;
+    border-radius: 10px;
+    
+}
+.dietlist{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    gap: 10px;
+}
+.dietlist>div{
+    border: 1px solid #fabc14;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+}
+.plan-details{
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.pland1{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+    gap: 10px;
+}
+.plan-price{
+    color: #fabc14;
+}
+.checkoutbtn{
+    padding: 15px 20px;
+    border: none;
+    color: #044941;
+    font-size: 18px;
+    border-radius: 20px;
+}

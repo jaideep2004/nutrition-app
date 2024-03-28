@@ -1,10 +1,11 @@
 
 .testwrap{
    text-align: center;
-  border-top: 1px solid #fabc14;
+  /* border-top: 1px solid #fabc14; */
    background-color: #044941;
    /* background-color: white; */
    padding: 40px 40px 90px 40px ;
+   
 }
 
 .testwrap>h1{

@@ -8,7 +8,7 @@ const Main2 = () => {
 		
 			<div className='main2wrapper'>
 				<div className='main2card' data-aos='fade-up' data-aos-duration='500'>
-					<i class='fa-solid fa-capsules fa-2xl'></i>
+					<i class='fa-solid fa-capsules  fa-2xl'></i>
 					<p>
 						Feel tired, <span>digestive issues</span> ,or{" "}
 						<span>chronic pain</span> ? Prioritize staff wellbeing for your

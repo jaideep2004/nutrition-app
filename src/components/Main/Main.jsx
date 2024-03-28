@@ -14,6 +14,7 @@ import Testimonials from "../Testimonials/Testimonials";
 import Podcast from "../Podcast/Podcast";
 import Signup from "../Signup/Signup";
 import NumberPatients from "./NumberPatients";
+import DietPlans from "../DietPlans/DietPlans";
 
 const Main = () => {
 	const videos = [
@@ -52,18 +53,17 @@ const Main = () => {
 					<i class='fa-solid fa-chevron-down fa-xl'></i>
 				</div>
 			</div>
-			{/* <NumberPatients/> */}
+			
 			<About />
-			<Services />
 			<Main2 />
+			<Services />
 
 			<Podcast />
 			<Main3 />
-
+			<NumberPatients/>
 			<Testimonials videos={videos} />
 			<LatestBlogs />
-			{/* <Signup/> */}
-			
+{/* <DietPlans/>			 */}
 		</div>
 	);
 };

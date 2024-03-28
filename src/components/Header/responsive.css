@@ -100,10 +100,16 @@
 		align-items: center;
 		/* justify-content: center; */
 		/* font-size: 27px; */
-		margin-left: -20px;
+		margin-left: -70px;
+		margin-top: -10px;
+		/* width: min-content; */
 	}
+	.logo > div:nth-child(1){
+		width: min-content;
+	} 
 	.logo > div:nth-child(2) {
-		margin-right: 130px;
+		/* margin-right: 130px; */
+		/* margin-left: -130px; */
 	}
 
 	.hlink {
@@ -178,7 +184,7 @@
 		/* scale: 1.1; */
 		margin-left: -21px;
 		margin-right: -21px;
-	}
+	} 
 	.service2 {
 		/* scale: 1.1; */
 		gap: 40px;
