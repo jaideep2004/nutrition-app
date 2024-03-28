@@ -18,7 +18,7 @@ const AdminDashboard = () => {
 	const fetchBlogPosts = async () => {
 		try {
 			const response = await axios.get(
-				"http://localhost:5000/api/latest-blogposts"
+				"https://nutrition-app-zyc5.onrender.com/api/latest-blogposts"
 			);
 			setBlogPosts(response.data);
 		} catch (error) {
@@ -31,7 +31,7 @@ const AdminDashboard = () => {
 		try {
 		  const authToken = localStorage.getItem('adminAuthToken');
 		  const response = await axios.post(
-			'http://localhost:5000/api/blogposts',
+			'https://nutrition-app-zyc5.onrender.com/api/blogposts',
 			{ title, content },
 			{
 			  headers: {
@@ -63,7 +63,7 @@ const AdminDashboard = () => {
 		try {
 			const authToken = localStorage.getItem("adminAuthToken");
 			const response = await axios.delete(
-				`http://localhost:5000/api/blogposts/${blogPostId}`,
+				`https://nutrition-app-zyc5.onrender.com/api/blogposts/${blogPostId}`,
 				{
 					headers: {
 						Authorization: `Bearer ${authToken}`,

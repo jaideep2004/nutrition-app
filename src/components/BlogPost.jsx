@@ -16,7 +16,7 @@ const BlogPost = () => {
   useEffect(() => {
     const fetchBlogPost = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/api/blogposts/${id}`);
+        const response = await axios.get(`https://nutrition-app-zyc5.onrender.com/api/blogposts/${id}`);
         setPost(response.data);
       } catch (error) {
         console.error('Error fetching blog post:', error);
@@ -30,7 +30,7 @@ const BlogPost = () => {
     try {
       const authToken = localStorage.getItem('userAuthToken'); // Replace with your user authentication token
       await axios.post(
-        `http://localhost:5000/api/blogposts/${id}/comments`,
+        `https://nutrition-app-zyc5.onrender.com/api/blogposts/${id}/comments`,
         { text: comment },
         {
           headers: {
