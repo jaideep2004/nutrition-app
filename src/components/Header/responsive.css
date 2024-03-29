@@ -66,23 +66,21 @@
 	#mo1:last-child {
 		background-color: #044941;
 		color: #f0dd4d;
-		padding: 20px 90px;
-		/* z-index: -1; */
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 20px 100px;
 	}
 
-	#mo1:nth-child(2) {
-		/* background-color: black; */
+	#mo1:nth-child(5) {
 		padding: 20px 90px;
 	}
-	#mo1:nth-child(5) {
-		padding: 0px 0px;
-	}
-	.mobilesign {
-		padding: 20px 113px;
-		/* border: 10px solid black; */
+
+	#mo1 > a {
 		text-decoration: none;
 		color: inherit;
 	}
+
 	/* header */
 
 	.header {
@@ -104,12 +102,8 @@
 		margin-top: -10px;
 		/* width: min-content; */
 	}
-	.logo > div:nth-child(1){
+	.logo > div:nth-child(1) {
 		width: min-content;
-	} 
-	.logo > div:nth-child(2) {
-		/* margin-right: 130px; */
-		/* margin-left: -130px; */
 	}
 
 	.hlink {
@@ -140,8 +134,7 @@
 	}
 	.mcontent {
 		scale: 0.76 0.7;
-		margin-top: -50px;
-		
+		margin-top: -20px;
 	}
 
 	.mainwrapbtn {
@@ -154,12 +147,15 @@
 		flex-direction: column;
 		margin-top: 200px;
 	}
-	.about2{
+
+	.bgmain2 {
+		scale: 0.8;
+		left: -100px;
+	}
+	.about2 {
 		flex-direction: column;
 	}
-	.aboutleft {
-		/* margin-top: 930px; */
-	}
+
 	.aboutleft > img {
 		scale: 0.8;
 	}
@@ -173,30 +169,64 @@
 
 	/* services */
 
-	.servicewrapper {
-		margin-top: 200px;
+	
+
+	.servicewrapper{
+		padding-top: 50px;
+	}
+	.servicecon {
+		flex-direction: column;
+
 	}
 
 	.service1 {
-		flex-direction: column;
-		margin-top: 250px;
-		gap: 40px;
-		/* scale: 1.1; */
-		margin-left: -21px;
-		margin-right: -21px;
-	} 
-	.service2 {
-		/* scale: 1.1; */
-		gap: 40px;
+		text-align: center;
+		scale: 1.05;
+		margin-top: 40px;
+		padding: 30px;
+		margin-left: -25px;
+		margin-right: -25px;
 	}
-
+	.service2 {
+		scale: 1.05;
+		margin-top: 60px;
+		padding: 30px;
+		text-align: center;
+		margin-left: -25px;
+		margin-right: -25px;
+	}
+	
+	
+	
 	.service {
 		flex-direction: column;
 	}
+	/* podcast */
+
+	.pod1{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	.podcastwrap {
+		flex-direction: column;
+		/* padding: 0px; */
+		/* margin-top: 700px; */
+	}
+
+	.videowrap {
+		scale: 0.6;
+		margin-top: -55px;
+	}
+	.podcasthead {
+		text-align: center;
+		
+	}
+
+
 
 	/* main2 */
 	.main2wrapper {
-		/* margin-top: 20px; */
+		padding-top: 570px;
 		flex-direction: column;
 	}
 
@@ -206,33 +236,32 @@
 	}
 
 	.main3left > img {
-		scale: 0.8;
+		scale: 0.7;
 	}
 
-	/* podcast */
-
-	.podcastwrap {
+	/* number */
+	.patientscontain{
+		padding: 100px 0px;
 		flex-direction: column;
-		/* margin-top: 700px; */
 	}
+	
+	/* testimonials */
+.testwrap>h1{
+	padding-top: 100px;
+}
 
-	.videowrap {
-		scale: 0.6;
-		margin-top: -50px;
-	}
-	.podcasthead {
-		text-align: center;
-	}
+
+
 
 	/* single blog */
-	.singleblog{
+	.singleblog {
 		margin-left: 0px;
 		margin-right: 0px;
 	}
 	.comments {
-		scale: 0.99;
+		/* scale: 0.99; */
 		margin-top: 300px;
-		margin-bottom: -10px;
+		
 	}
 	.comments > input {
 		width: 210px;
@@ -242,23 +271,49 @@
 	.signform {
 		scale: 0.74 0.9;
 	}
-	
+
 	.signform > div > input {
-		
 		display: flex;
 		width: 200px;
 		scale: 1 1.2;
 		margin-top: 10px;
-		
 	}
-	.signform > div > label{
+	.signform > div > label {
 		margin-left: 25px;
-	} 
-	.signform>button{
+	}
+	.signform > button {
 		margin-right: 70px;
 		scale: 1.2;
 		margin-top: 10px;
 	}
+
+
+
+
+/* dietplans */
+
+
+.dietwrap{
+	flex-direction: column;
+}
+
+.dietwrap1{
+	order: 2;
+}
+
+.dietPlan{
+	flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
 
 	/* footer */
 	.footerwrap {
@@ -267,11 +322,14 @@
 	.footup {
 		text-align: center;
 	}
+	.footleft1{
+		/* scale: 0.9; */
+	}
 	.footdown {
 		flex-direction: column;
 	}
 	.footright1 {
-		margin-top: -210px;
+		margin-top: -250px;
 		gap: 60px;
 	}
 }

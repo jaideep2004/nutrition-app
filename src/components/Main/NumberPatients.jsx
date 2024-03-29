@@ -16,7 +16,7 @@ const NumberPatients = () => {
     const options = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5 // When 50% of the component is in view
+      threshold: 0.3 // When 50% of the component is in view
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -48,7 +48,7 @@ const NumberPatients = () => {
   ]);
 
   useEffect(() => {
-    const animationSpeeds = [70, 20, 10, 10]; // Speeds at which the numbers change
+    const animationSpeeds = [20, 10, 9, 10]; // Speeds at which the numbers change
     let animationFrameId;
 
     const updatePatientData = () => {

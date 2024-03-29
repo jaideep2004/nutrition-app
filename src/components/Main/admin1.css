@@ -6,6 +6,7 @@
     /* border-radius: 10px; */
     overflow-x: scroll;
    padding-top: 20px;
+   padding-bottom: 70px;
 }
 
 
@@ -65,7 +66,7 @@ font-size: 19px;
 /* single blog */
 
 .singleblog{
-    background-color: #044941;
+    background-color: white;
     border: 1px solid white;
     margin: 40px ;
     display: flex;
@@ -83,16 +84,18 @@ font-size: 19px;
 }
 .singleblog>p{
     font-size: 18px;
-    color: white;
+    color: black;
+    line-height: 1.5;
+    text-align: center;
 }
 .comments{
-    border: 1px solid white;
+    border: 1px solid #044941;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
-    margin-top: 250px;
-   
+    padding: 7px 20px;
+    margin-top: 150px;
+   margin-bottom: -10px;
 
 }
 .comments>label{
@@ -100,8 +103,8 @@ font-size: 19px;
     margin:  15px 0px;
 }
 .comments>input{
-    width: 400px;
-    padding: 15px;
+    width: 350px;
+    padding: 12px;
     font-size: 18px;
     outline: none;
     /* border: none; */

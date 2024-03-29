@@ -15,12 +15,13 @@ body {
 /* main header */
 .header {
 	/* background-color: #fabc14; */
+	/* box-shadow:  1px 1px 1px white; */
 	position: sticky;
 	top: 0px;
-	backdrop-filter: blur(20px);
+	backdrop-filter: blur(90px);
 	z-index: 9999;
 	/* border: 1px solid white; */
-	padding: 30px 40px;
+	padding: 20px 20px 20px 35px ;
 }
 .headwrapper {
 	display: flex;

@@ -157,6 +157,16 @@ const Header2 = () => {
 					{isVisible && (
 						<div className='mobilemenu' data-aos='zoom-in-down'>
 							{/* Dropdown for Types of Diet */}
+							<Link
+								to='/'
+								onClick={handleLinkClick}
+								id='mo1'
+								data-aos='zoom-in-down'>
+								<a href='#'>
+									<div>HOME</div>
+								</a>
+							</Link>
+
 							<a
 								href='#about'
 								id='mo1'
@@ -199,6 +209,12 @@ const Header2 = () => {
 									</div>
 								)}
 							</div>
+							<Link to='dietplans' id='mo1' onClick={handleLinkClick}>
+								<a href='#' data-aos='zoom-in-down'>
+									<div>DIET PLANS</div>
+								</a>
+							</Link>
+
 							<a
 								href='#blog'
 								id='mo1'
@@ -206,22 +222,21 @@ const Header2 = () => {
 								onClick={handleLinkClick}>
 								<div>BLOG</div>
 							</a>
-
-							<a
-								href='#'
+							<Link
+								to='signup'
 								id='mo1'
-								data-aos='zoom-in-down'
-								onClick={handleLinkClick}>
-								<Link to='signup' className="mobilesign">
+								onClick={handleLinkClick}
+								data-aos='zoom-in-down'>
+								<a href='#'>
 									<div>SIGN UP</div>
-								</Link>
-							</a>
+								</a>
+							</Link>
 
 							<a
 								href='https://api.whatsapp.com/send?phone=9814323293'
 								id='mo1'
-								data-aos='zoom-in-down'
 								onClick={handleLinkClick}>
+								<i class='fa-brands fa-whatsapp fa-beat fa-lg'></i>
 								<div>CALL NOW</div>
 							</a>
 						</div>
@@ -268,10 +283,10 @@ const Header2 = () => {
 						</div>
 
 						<Link to='dietplans'>
-						<div className='hlink'>
-							<a href='#'>DIET PLANS</a>
+							<div className='hlink'>
+								<a href='#'>DIET PLANS</a>
 							</div>
-							</Link>
+						</Link>
 						<div className='hlink'>
 							<a href='#blog'>BLOG</a>
 						</div>
@@ -283,7 +298,7 @@ const Header2 = () => {
 						</Link>
 
 						<div className='hlink'>
-						<i class="fa-brands fa-whatsapp fa-beat fa-lg"></i>
+							<i class='fa-brands fa-whatsapp fa-beat fa-lg'></i>
 							<a href='https://api.whatsapp.com/send?phone=9814323293'>
 								CALL NOW
 							</a>

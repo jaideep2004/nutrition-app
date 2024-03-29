@@ -53,7 +53,7 @@ const LatestBlogs = () => {
           {blogPosts.map((post) => (
             <div key={post._id}>
               <h3>{post.title}</h3>
-              <p>{post.content.substring(0, 30)}...</p>
+              <p>{post.content.substring(0, 60)}...</p>
               <Link to={`/blog/${post._id}`}>Read More</Link>
             </div>
           ))}

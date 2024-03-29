@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import "./main.css";
 import Main2 from "./Main2";
 import Main3 from "./Main3";
-import Main4 from "./Main4";
 import LatestBlogs from "./LatestBlogs";
 import Services from "../Services/Services";
 import About from "../About/About";
@@ -12,9 +11,9 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import Testimonials from "../Testimonials/Testimonials";
 import Podcast from "../Podcast/Podcast";
-import Signup from "../Signup/Signup";
 import NumberPatients from "./NumberPatients";
-import DietPlans from "../DietPlans/DietPlans";
+import { TypeAnimation } from 'react-type-animation';
+
 
 const Main = () => {
 	const videos = [
@@ -22,7 +21,10 @@ const Main = () => {
 			src: "./images/v1.mp4",
 			label: "Relief from High Blood Pressure and Sugar and High Blood Sugar",
 		},
-		{ src: "./images/v2.mp4", label: "Relief from High Blood Pressure and High Blood Sugar " },
+		{
+			src: "./images/v2.mp4",
+			label: "Relief from High Blood Pressure and High Blood Sugar ",
+		},
 		{ src: "./images/v3.mp4", label: "Relief from Thyroid and Bloating " },
 		{ src: "./images/v4.mp4", label: "Relief from Lack of Energy and Obesity" },
 	];
@@ -39,9 +41,14 @@ const Main = () => {
 			<div className='mainwrapper'>
 				<div className='leftmain'>
 					<div className='mcontent'>
-						Ready to Shed Weight, many Metabolic problems and Gain Confidence?
-						Let's Uncover Your<span> Healthiest Self </span>!
-					</div>
+						<div>
+							Ready to Address Weight , Tackle Metabolic Challenges, and Boost Confidence? 
+						</div>
+						<div>
+						Let's Uncover Your Healthiest Self!
+						</div>
+						</div>
+						
 					<i class='fa-solid fa-seedling fa-2xl'></i>
 				</div>
 				<div className='mainwrapbtn'>
@@ -53,17 +60,17 @@ const Main = () => {
 					<i class='fa-solid fa-chevron-down fa-xl'></i>
 				</div>
 			</div>
-			
+
 			<About />
 			<Main2 />
 			<Services />
 
 			<Podcast />
 			<Main3 />
-			<NumberPatients/>
+			<NumberPatients />
 			<Testimonials videos={videos} />
 			<LatestBlogs />
-{/* <DietPlans/>			 */}
+			{/* <DietPlans/>			 */}
 		</div>
 	);
 };

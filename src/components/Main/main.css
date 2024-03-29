@@ -28,15 +28,22 @@
 }
 
 .mcontent {
-	/* font-style: italic; */
 
+	/* border: 1px solid white; */
 	text-shadow: 0px 0px 2px black;
 	color: white;
 	font-size: 49px;
 	font-weight: 500;
-	/* border: 1px solid white; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
 	text-align: center;
-	/* padding: 10px 35px; */
+	
+}
+.mcontent>div:nth-child(1){
+	/* text-align: center; */
 }
 .mcontent > span {
 	color: #fabc14;
@@ -191,8 +198,8 @@
 .pcontain {
 	border: 1px solid #fabc14 ;
 	/* box-shadow: inset 0px 0px 10px #fabc14; */
-	margin: 0px 10px;
-	padding: 25px 30px;
+	margin: 2px 10px;
+	padding: 40px 30px;
 	color: white;
 	
 	width: 300px;

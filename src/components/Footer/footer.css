@@ -38,10 +38,9 @@ gap: 310px;
     
     
 }
+
 .footleft1>table>tr>td:nth-child(1){
     padding: 2px 10px ;
-}
-.footleft1>table>tr>td:nth-child(1){
     font-size: 19px;
     color: white;
     font-weight: 600;

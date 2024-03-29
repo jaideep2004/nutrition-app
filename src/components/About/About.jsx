@@ -12,22 +12,16 @@ const About = () => {
 
 	return (
 		<div className='aboutwrapper' id='about'>
-			
-			
-
 			<div className='about2'>
-			
 				<div className='aboutleft'>
-				<div className='bgmain2'></div>
+					<div className='bgmain2'></div>
 					<img src='./images/pic1.jpeg' alt='' />
 					<i class='fa-solid fa-carrot fa-2xl'></i>
 				</div>
 				<div className='aboutright'>
-					<div className='aboutcon' data-aos='fade-left' data-aos-duration='500'>
+					<div className='aboutcon' data-aos='fade-up' data-aos-duration='500'>
 						<div className='abouthead'>
-							<h1 data-aos='fade-up' data-aos-duration='500'>
-								About Me
-							</h1>
+							<h1>About Me</h1>
 						</div>
 						<p>
 							<span>Indian - LCHF</span> Nutrition Coach
