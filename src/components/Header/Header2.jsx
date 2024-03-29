@@ -146,7 +146,7 @@ const Header2 = () => {
 								className='fa-solid fa-circle-xmark fa-2xl'
 								data-aos='zoom-in'></i>
 						) : (
-							<div id='mmenu' data-aos='zoom-in'>
+							<div id='mmenu' >
 								<div></div>
 								<div></div>
 								<div></div>
