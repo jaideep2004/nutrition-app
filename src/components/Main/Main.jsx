@@ -19,14 +19,15 @@ const Main = () => {
 	const videos = [
 		{
 			src: "./images/v1.mp4",
-			label: "Relief from High Blood Pressure and Sugar and High Blood Sugar",
+			label: "Gained Relief from High Blood Pressure and High Blood Sugar",
 		},
 		{
 			src: "./images/v2.mp4",
-			label: "Relief from High Blood Pressure and High Blood Sugar ",
+			label: "Gained Relief from High Blood Pressure and High Blood Sugar ",
 		},
-		{ src: "./images/v3.mp4", label: "Relief from Thyroid and Bloating " },
-		{ src: "./images/v4.mp4", label: "Relief from Lack of Energy and Obesity" },
+		{ src: "./images/v3.mp4", label: "Gained Relief from Thyroid and Bloating " },
+		{ src: "./images/v4.mp4", label: "Gained Relief from Lack of Energy and Obesity" },
+		{ src: "./images/v5.mp4", label: "Gained Relief from Stomach problem and reduction in weight" },
 	];
 
 	useEffect(() => {
