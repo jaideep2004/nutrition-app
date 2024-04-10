@@ -3,6 +3,7 @@ import AdminDashboard from './components/AdminDashboard'
 import BlogPost from './components/BlogPost'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
+import Dashboard from './components/Dashboard';
 function App() {
  
 
@@ -13,7 +14,7 @@ function App() {
       
         <Routes>
          
-        <Route path="/" element={<AdminDashboard />} />
+        <Route path="/" element={<Dashboard />} />
         <Route path="/blog/:id" element={<BlogPost />} />
         </Routes>
         
