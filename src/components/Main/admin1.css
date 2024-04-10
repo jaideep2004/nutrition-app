@@ -90,7 +90,8 @@ font-size: 19px;
     font-size: 18px;
     color: black;
     line-height: 1.5;
-    text-align: center;
+    /* text-align: center; */
+    white-space: pre-wrap;
 }
 .comments{
     border: 1px solid #044941;
