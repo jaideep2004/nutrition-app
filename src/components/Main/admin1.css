@@ -78,9 +78,13 @@ font-size: 19px;
     min-height: 300px;
 }
 .singleblog>h1{
-    color: #fabc14;
+    color: #044941;
     font-size: 31px;
     font-weight: 600;
+}
+.singleblog>img{
+    height: 300px;
+    border-radius: 10px;
 }
 .singleblog>p{
     font-size: 18px;

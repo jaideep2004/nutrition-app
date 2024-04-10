@@ -55,10 +55,14 @@ const BlogPost = () => {
   if (!post) {
     return <p>Loading...</p>;
   }
+  const imageUrl = `https://nutrition-app-zyc5.onrender.com${post.imageUrl}`;
+console.log('Constructed image URL:', imageUrl); 
+ 
 
   return (
     <div className="singleblog">
       <h1>{post.title}</h1>
+      <img src={imageUrl} alt="Image" />
       <p>{post.content}</p>
 
       {/* Comment Section */}

@@ -38,7 +38,7 @@
     border: none;
     font-size: 18px;
     outline: none;
-   
+    
 }
 .signform>div>input::placeholder{
    text-align: center;

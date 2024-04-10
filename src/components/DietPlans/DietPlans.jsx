@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { loadScript } from "./utils"; // Assume you have a utility function to load external scripts
+import { loadScript } from "./utils";
 import "./diet.css";
 
 const DietPlans = () => {
@@ -9,14 +9,14 @@ const DietPlans = () => {
 		setSelectedPlan(plan);
 		if (window.Razorpay) {
 			const razorpay = new window.Razorpay({
-				key: "rzp_test_uCEraKVgEt8ZVM", // Replace with your Razorpay API key
-				amount: plan.price * 100, // Amount in paisa (multiply by 100 for Rupees to Paisa conversion)
+				key: "rzp_test_uCEraKVgEt8ZVM",
+				amount: plan.price * 100, // Amount in paisa
 				currency: "INR",
 				name: "Nutrition Plans",
-				description: `${plan.name} Plan`,
-				image: "/path/to/your/logo.png", // Replace with your logo URL
+				description: `${plan.name} Plan`,                                    //rzp_test_uCEraKVgEt8ZVM
+				image: "/path/to/your/logo.png",
 				handler: function (response) {
-					alert("Payment Successful!"); // You may replace this with a more sophisticated handling
+					alert("Payment Successful!");
 				},
 			});
 			razorpay.open();
@@ -26,7 +26,7 @@ const DietPlans = () => {
 	};
 
 	useEffect(() => {
-		loadScript("https://checkout.razorpay.com/v1/checkout.js"); // Load Razorpay SDK
+		loadScript("https://checkout.razorpay.com/v1/checkout.js");
 	}, []);
 
 	const dietPlans = [

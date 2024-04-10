@@ -166,14 +166,6 @@ const Header2 = () => {
 									<div>HOME</div>
 								</a>
 							</Link>
-
-							<a
-								href='#about'
-								id='mo1'
-								data-aos='zoom-in-down'
-								onClick={handleLinkClick}>
-								<div>ABOUT ME</div>
-							</a>
 							<a
 								href='#'
 								id='mo1'
@@ -209,6 +201,14 @@ const Header2 = () => {
 									</div>
 								)}
 							</div>
+							<a
+								href='#about'
+								id='mo1'
+								data-aos='zoom-in-down'
+								onClick={handleLinkClick}>
+								<div>ABOUT ME</div>
+							</a>
+							
 							<Link to='dietplans' id='mo1' onClick={handleLinkClick}>
 								<a href='#' data-aos='zoom-in-down'>
 									<div>DIET PLANS</div>

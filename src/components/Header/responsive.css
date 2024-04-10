@@ -115,9 +115,9 @@
 	.maind {
 		/* border: 1px solid black; */
 		z-index: 9999;
-		scale: 1.35;
+		scale: 1.32;
 		position: absolute;
-		margin-top: 200px;
+		margin-top: 194px;
 		margin-right: 60px;
 	}
 
@@ -274,13 +274,13 @@
 
 	.signform > div > input {
 		display: flex;
-		width: 200px;
-		scale: 0.75 1.2;
-		margin-top: 10px;
+		/* width: 50px; */
+		padding: 10px;
+		scale: 0.7 1;
+		/* text-align: center; */
 	}
-	.signform > div > label {
-		margin-left: 25px;
-	}
+	
+	
 	.signform > button {
 		margin-right: 70px;
 		scale: 1.2;
