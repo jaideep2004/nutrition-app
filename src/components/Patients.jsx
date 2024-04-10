@@ -6,8 +6,17 @@ const Patients = () => {
     const [patients, setPatients] = useState([]);
 
     useEffect(() => {
+        // Fetch initial blog posts when component mounts
         fetchPatients();
-    }, []);
+    
+        // Set up interval to fetch blog posts periodically
+        const intervalId = setInterval(() => {
+          fetchPatients();
+        }, 500); // Fetch every 1 minute (adjust interval as needed)
+    
+        // Cleanup function to clear interval when component unmounts
+        return () => clearInterval(intervalId);
+      }, []);
 
 
     const fetchPatients = async () => {

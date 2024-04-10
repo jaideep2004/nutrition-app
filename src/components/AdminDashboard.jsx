@@ -14,8 +14,17 @@ const AdminDashboard = () => {
 	const [blogPosts, setBlogPosts] = useState([]);
 
 	useEffect(() => {
-        fetchBlogPosts();
-    }, []);
+    // Fetch initial blog posts when component mounts
+    fetchBlogPosts();
+
+    // Set up interval to fetch blog posts periodically
+    const intervalId = setInterval(() => {
+      fetchBlogPosts();
+    }, 500); // Fetch every 1 minute (adjust interval as needed)
+
+    // Cleanup function to clear interval when component unmounts
+    return () => clearInterval(intervalId);
+  }, []);
 
     const fetchBlogPosts = async () => {
         try {

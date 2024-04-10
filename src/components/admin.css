@@ -218,12 +218,14 @@ body {
 .singleblog > img {
 	height: 300px;
 	border-radius: 10px;
+	
 }
 .singleblog > p {
 	font-size: 18px;
 	color: black;
 	line-height: 1.5;
 	/* text-align: center; */
+	white-space: pre-wrap;
 }
 .comments {
 	border: 1px solid #044941;
@@ -308,4 +310,16 @@ padding: 12px;
 	.admincon > input {
 		width: 320px;
 	}
+
+	.comments {
+		/* scale: 0.99; */
+		margin-top: 300px;
+		
+	}
+	.comments > input {
+		width: 210px;
+	}
+
+
+
 }
