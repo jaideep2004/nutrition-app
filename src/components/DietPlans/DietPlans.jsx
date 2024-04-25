@@ -3,6 +3,11 @@ import { loadScript } from "./utils";
 import "./diet.css";
 
 const DietPlans = () => {
+	useEffect(() => {
+		// Scroll to the top when the component mounts
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}, []);
+
 	const [selectedPlan, setSelectedPlan] = useState(null);
 
 	const handlePlanSelect = (plan) => {

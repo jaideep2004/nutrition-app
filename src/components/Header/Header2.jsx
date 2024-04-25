@@ -12,6 +12,23 @@ const Header2 = () => {
 
 	//dropdown
 
+	//click outside
+	const dropdownRef = useRef(null);
+
+	useEffect(() => {
+		document.addEventListener("mousedown", handleClickOutside);
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, []);
+
+	const handleClickOutside = (event) => {
+		if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+			setShowDropdown(false);
+			setShowSubMenu(false);
+		}
+	};
+
 	const [showDropdown, setShowDropdown] = useState(false);
 	const [selectedOption, setSelectedOption] = useState(null);
 	const [showSubMenu, setShowSubMenu] = useState(false);
@@ -58,7 +75,62 @@ const Header2 = () => {
 	const handleLinkClick = () => {
 		setIsVisible(false);
 		setIsIconVisible(false);
+		if (window.location.pathname === "/") {
+			scrollToAboutMe();
+		} else {
+			redirectHome();
+		}
 	};
+	const handleLinkClick2 = () => {
+		setIsVisible(false);
+		setIsIconVisible(false);
+		if (window.location.pathname === "/") {
+			scrollToBlog();
+		} else {
+			redirectBlog();
+		}
+	};
+	//scroll about
+	const scrollToAboutMe = () => {
+		const aboutDiv = document.getElementById("about");
+		if (aboutDiv) {
+			aboutDiv.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+	
+	const redirectHome = () => {
+		window.location.href = "/";
+	};
+	
+	const handleAboutLinkClick = () => {
+		if (window.location.pathname === "/") {
+			scrollToAboutMe();
+		} else {
+			redirectHome();
+		}
+	};
+	
+	//scroll blog
+	const scrollToBlog = () => {
+		const blogDiv = document.getElementById("blog");
+		if (blogDiv) {
+			blogDiv.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+	
+	const redirectBlog = () => {
+		window.location.href = "/";
+	};
+	
+	const handleBlogLinkClick = () => {
+		if (window.location.pathname === "/") {
+			scrollToBlog();
+		} else {
+			redirectBlog();
+		}
+	};
+	
+	
 
 	const options = [
 		{
@@ -146,7 +218,7 @@ const Header2 = () => {
 								className='fa-solid fa-circle-xmark fa-2xl'
 								data-aos='zoom-in'></i>
 						) : (
-							<div id='mmenu' >
+							<div id='mmenu'>
 								<div></div>
 								<div></div>
 								<div></div>
@@ -201,6 +273,7 @@ const Header2 = () => {
 									</div>
 								)}
 							</div>
+
 							<a
 								href='#about'
 								id='mo1'
@@ -208,7 +281,7 @@ const Header2 = () => {
 								onClick={handleLinkClick}>
 								<div>ABOUT ME</div>
 							</a>
-							
+
 							<Link to='dietplans' id='mo1' onClick={handleLinkClick}>
 								<a href='#' data-aos='zoom-in-down'>
 									<div>DIET PLANS</div>
@@ -219,7 +292,7 @@ const Header2 = () => {
 								href='#blog'
 								id='mo1'
 								data-aos='zoom-in-down'
-								onClick={handleLinkClick}>
+								onClick={handleLinkClick2}>
 								<div>BLOG</div>
 							</a>
 							<Link
@@ -244,15 +317,23 @@ const Header2 = () => {
 
 					{/* laptop menu */}
 					<div className='headlinks'>
+						<Link to='/'>
+							<div className='hlink'>
+								<a href='#'>HOME</a>
+							</div>
+						</Link>
+
 						<div className='hlink'>
-							<a href='#about'>ABOUT ME</a>
+							<a href='#about' onClick={handleAboutLinkClick} >
+								ABOUT ME
+							</a>
 						</div>
 
 						<div className='hlink'>
 							<a href='' onClick={handleMainLinkClick}>
 								DIET TYPES
 							</a>
-							<div className='maind'>
+							<div className='maind' ref={dropdownRef}>
 								{showDropdown && (
 									<div className='dropdown-content' data-aos='zoom-in-down'>
 										{options.map((option) => (
@@ -288,7 +369,7 @@ const Header2 = () => {
 							</div>
 						</Link>
 						<div className='hlink'>
-							<a href='#blog'>BLOG</a>
+							<a href='#blog' onClick={handleBlogLinkClick}>BLOG</a>
 						</div>
 
 						<Link to='signup'>

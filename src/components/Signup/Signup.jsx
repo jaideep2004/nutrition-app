@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import axios from "axios";
 import "./signup.css";
 
@@ -7,6 +7,12 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Signup = () => {
+
+	useEffect(() => {
+		// Scroll to the top when the component mounts
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}, []);
+
 	const [formData, setFormData] = useState({
 		name: "",
 		phone: "",

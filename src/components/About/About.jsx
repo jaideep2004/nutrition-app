@@ -11,7 +11,7 @@ const About = () => {
 	}, []);
 
 	return (
-		<div className='aboutwrapper' id='about'>
+		<div className='aboutwrapper' id="about">
 			<div className='about2'>
 				<div className='aboutleft'>
 					<div className='bgmain2'></div>

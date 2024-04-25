@@ -37,10 +37,7 @@ const BlogPost = () => {
         }
       );
 
-      // After submitting the comment, refetch the blog post to update the comments
-      // fetchBlogPost();
-
-      // Show toast notification
+      
       toast.success('Comment submitted successfully!');
       
       // Clear the comment input

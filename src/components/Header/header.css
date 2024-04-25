@@ -75,9 +75,9 @@ body {
 
 .headlinks {
 	display: flex;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 600;
-	gap: 20px;
+	gap: 13px;
 	align-items: center;
 	/* border: 1px solid white; */
 	border-radius: 10px;
@@ -105,7 +105,7 @@ body {
 .hlink > a {
 	padding: 10px 15px;
 	/* border: 1px solid white; */
-	text-shadow: 0px 2px 2px black;
+	text-shadow: 1px 2px 0px black;
 	text-decoration: none;
 	color: inherit;
 }
@@ -131,7 +131,7 @@ body {
 
 }
 
-.hlink:nth-child(6) {
+.hlink:nth-child(7) {
 	background-color: #044941;
 	font-weight: 600;
 	padding: 10px 15px;
@@ -161,29 +161,31 @@ body {
 	/* border: 1px solid black; */
 	display: flex;
 	flex-direction: column;
-	gap: 7px;
+	gap: 10px;
 	padding: 10px;
 	background-color: white;
 	border-radius: 5px;
+	backdrop-filter: blur(20px);
+	box-shadow: inset 0px 2px 12px white;
 }
 .doption {
 	background-color: #fabc14;
 	border-radius: 5px;
 	/* width: max-content; */
 	/* border: 1px solid white; */
-	padding: 5px 25px;
+	padding: 6px 25px;
 	color: #044941;
 	display: flex;
 	align-items: center;
 	min-width: 170px;
 }
 .maind {
-	/* border: 1px solid black; */
+	/* border: 2px solid black; */
 	position: absolute;
 	top: 35px;
-	right: 10px;
+	right: 2px;
 	display: flex;
-
+flex-direction: column;
 	/* right: 10px; */
 }
 .submenu {
