@@ -22,13 +22,27 @@ const Header2 = () => {
 		};
 	}, []);
 
+	// const handleClickOutside = (event) => {
+	// 	if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+	// 		setShowDropdown(false);
+	// 		setShowSubMenu(false);
+	// 	}
+	// };
 	const handleClickOutside = (event) => {
-		if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+		// Check if the clicked target is outside of the dropdown and its submenus
+		if (
+			dropdownRef.current &&
+			!dropdownRef.current.contains(event.target) &&
+			!event.target.classList.contains("doption") && // Exclude clicks on dropdown options
+			!event.target.classList.contains("submenu") && // Exclude clicks on submenus
+			!event.target.classList.contains("fa-circle-xmark") // Exclude clicks on close icons
+		) {
+			// Close the dropdown and submenus
 			setShowDropdown(false);
 			setShowSubMenu(false);
 		}
 	};
-
+	
 	const [showDropdown, setShowDropdown] = useState(false);
 	const [selectedOption, setSelectedOption] = useState(null);
 	const [showSubMenu, setShowSubMenu] = useState(false);
@@ -242,7 +256,9 @@ const Header2 = () => {
 								href='#'
 								id='mo1'
 								data-aos='zoom-in-down'
-								onClick={handleMainLinkClick}>
+								
+								onClick={handleMainLinkClick}
+							>
 								<div>DIET TYPES</div>
 							</a>
 							<div className='maind'>
