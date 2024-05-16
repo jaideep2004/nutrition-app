@@ -22,12 +22,7 @@ const Header2 = () => {
 		};
 	}, []);
 
-	// const handleClickOutside = (event) => {
-	// 	if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-	// 		setShowDropdown(false);
-	// 		setShowSubMenu(false);
-	// 	}
-	// };
+	
 	const handleClickOutside = (event) => {
 		// Check if the clicked target is outside of the dropdown and its submenus
 		if (
@@ -213,8 +208,8 @@ const Header2 = () => {
 	];
 
 	return (
-		<div className='header'>
-			<header>
+		
+			<header className='header'>
 				<div className='headwrapper'>
 					<Link to='/'>
 						<div className='logo' onClick={handleLinkClick}>
@@ -403,7 +398,7 @@ const Header2 = () => {
 					</div>
 				</div>
 			</header>
-		</div>
+		
 	);
 };
 
