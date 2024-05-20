@@ -40,6 +40,10 @@ const Main = () => {
 			src: "./images/v6.mp4",
 			label: "Gained Relief from Obesity ",
 		},
+		{
+			src: "./images/v7.mp4",
+			label: "Gained Relief from Diabetes ",
+		},
 	];
 
 	useEffect(() => {
