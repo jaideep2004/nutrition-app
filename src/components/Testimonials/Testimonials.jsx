@@ -1,21 +1,18 @@
 
 
-
-import React, { useRef, useState, useEffect } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React, { useState, useEffect } from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./testimonials.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 const Testimonials = ({ videos }) => {
-
   useEffect(() => {
-		AOS.init();
-	}, []);
-  const sliderRef = useRef(null);
+    AOS.init();
+  }, []);
+
   const [slidesToShow, setSlidesToShow] = useState(2); // Initial value for bigger screens
 
   useEffect(() => {
@@ -38,50 +35,54 @@ const Testimonials = ({ videos }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
-  const handleBeforeChange = (oldIndex) => {
+  const handleBeforeChange = (index) => {
     // Pause and mute the previous video when sliding
-    const currentVideo = document.getElementById(`video-${oldIndex}`);
+    const currentVideo = document.querySelector(
+      ".control-dots .dot.selected + .slide video"
+    );
     if (currentVideo) {
       currentVideo.pause();
       currentVideo.muted = true;
     }
   };
 
-  const settings = {
-    autoplay: true,
-    arrows: true,
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: slidesToShow,
-    slidesToScroll: 1,
-    beforeChange: handleBeforeChange,
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
   };
 
   return (
-    <div className="testwrap">
+    <div className="testwrap" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
       <h1>Our Testimonials</h1>
-      <Slider ref={sliderRef} {...settings} className="slider1">
+      <Carousel
+        showArrows
+        autoPlay={!isHovered}
+        infiniteLoop
+        interval={3000}
+        transitionTime={1000}
+        showThumbs={false}
+        showStatus={false}
+        onChange={handleBeforeChange}
+        centerMode
+        centerSlidePercentage={100 / slidesToShow}
+      >
         {videos.map((video, index) => (
           <div key={index} className="videocontain">
-            <video
-              id={`video-${index}`}
-              controls
-              autoPlay={false}
-              muted
-              height={450}
-            >
+            <video id={`video-${index}`} controls autoPlay={false} muted height={450}>
               <source src={video.src} type="video/mp4" />
               Your browser does not support the video tag.
-              
             </video>
-            <div className="videolabel"  >
-            <p>{video.label}</p>
+            <div className="videolabel">
+              <p>{video.label}</p>
             </div>
-            
           </div>
         ))}
-      </Slider>
+      </Carousel>
     </div>
   );
 };
