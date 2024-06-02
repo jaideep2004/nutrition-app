@@ -44,6 +44,10 @@ const Main = () => {
 			src: "./images/v7.mp4",
 			label: "Gained Relief from Diabetes ",
 		},
+		{
+			src: "./images/v8.mp4",
+			label: "Got rid of Pre-diabetic and weight reduction ",
+		},
 	];
 
 	useEffect(() => {
