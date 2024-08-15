@@ -169,14 +169,11 @@
 
 	/* services */
 
-	
-
-	.servicewrapper{
+	.servicewrapper {
 		padding-top: 50px;
 	}
 	.servicecon {
 		flex-direction: column;
-
 	}
 
 	.service1 {
@@ -195,34 +192,33 @@
 		margin-left: -25px;
 		margin-right: -25px;
 	}
-	
-	
-	
+
 	.service {
 		flex-direction: column;
 	}
 	/* podcast */
 
-	.pod1{
+	.pod1 {
 		margin-left: -20px;
 		margin-right: -20px;
 	}
 	.podcastwrap {
 		flex-direction: column;
-		/* padding: 0px; */
-		/* margin-top: 700px; */
 	}
-
-	.videowrap {
-		scale: 0.6;
-		margin-top: -55px;
-	}
-	.podcasthead {
-		text-align: center;
+	.podcastwrap2 {
+		flex-direction: column;
 		
 	}
 
-
+	.videowrap {
+		scale: 0.5;
+		margin-top: -60px;
+		/* order: 1; */
+	}
+	.podcasthead {
+		/* order: 1; */
+		text-align: center;
+	}
 
 	/* main2 */
 	.main2wrapper {
@@ -240,18 +236,15 @@
 	}
 
 	/* number */
-	.patientscontain{
+	.patientscontain {
 		padding: 100px 0px;
 		flex-direction: column;
 	}
-	
+
 	/* testimonials */
-.testwrap>h1{
-	padding-top: 100px;
-}
-
-
-
+	.testwrap > h1 {
+		padding-top: 100px;
+	}
 
 	/* single blog */
 	.singleblog {
@@ -261,7 +254,6 @@
 	.comments {
 		/* scale: 0.99; */
 		margin-top: 300px;
-		
 	}
 	.comments > input {
 		width: 210px;
@@ -279,46 +271,33 @@
 		scale: 0.7 1;
 		/* text-align: center; */
 	}
-	
-	
+
 	.signform > button {
 		margin-right: 70px;
 		scale: 1.2;
 		margin-top: 10px;
 	}
 
-.signformdiv{
-	flex-direction: column;
-	/* align-items: start; */
-justify-content: flex-start;
-	/* justify-content: start; */
-}
+	.signformdiv {
+		flex-direction: column;
+		/* align-items: start; */
+		justify-content: flex-start;
+		/* justify-content: start; */
+	}
 
+	/* dietplans */
 
-/* dietplans */
+	.dietwrap {
+		flex-direction: column;
+	}
 
+	.dietwrap1 {
+		order: 2;
+	}
 
-.dietwrap{
-	flex-direction: column;
-}
-
-.dietwrap1{
-	order: 2;
-}
-
-.dietPlan{
-	flex-direction: column;
-}
-
-
-
-
-
-
-
-
-
-
+	.dietPlan {
+		flex-direction: column;
+	}
 
 	/* footer */
 	.footerwrap {
@@ -327,7 +306,7 @@ justify-content: flex-start;
 	.footup {
 		text-align: center;
 	}
-	.footleft1{
+	.footleft1 {
 		/* scale: 0.9; */
 	}
 	.footdown {

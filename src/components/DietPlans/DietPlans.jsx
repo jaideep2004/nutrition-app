@@ -39,13 +39,13 @@ const DietPlans = () => {
 			id: 1,
 			img: "./images/n1.jpg",
 			name: "3 Months Individual Program",
-			price: 22000,
+			price: 25000,
 		},
 		{
 			id: 2,
 			img: "./images/n2.jpg",
 			name: "6 Months Individual Program",
-			price: 35000,
+			price: 40000,
 		},
 	];
 
