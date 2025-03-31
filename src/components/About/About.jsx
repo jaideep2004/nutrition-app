@@ -11,7 +11,7 @@ const About = () => {
 	}, []);
 
 	return (
-		<div className='aboutwrapper' id="about">
+		<div className='aboutwrapper' id='about'>
 			<div className='about2'>
 				<div className='aboutleft'>
 					<div className='bgmain2'></div>
@@ -28,7 +28,6 @@ const About = () => {
 							<br />
 							<span>DLIFE.IN </span>( India's Only LCHF Community) <br />
 							Practicing Health & Nutrition (LCHF) Coach –
-							<span> Since 2019.</span>
 							<br />
 							<br />
 							<span>2000+ Clients</span> (personalized Coaching) – spread all
